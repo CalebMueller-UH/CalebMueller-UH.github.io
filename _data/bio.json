@@ -27,7 +27,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "Ubuntu", "FreeRTOS", "g++", "TI LaunchPad" ]
+      "keywords": [ "Windows", "Ubuntu", "FreeRTOS"]
     }
   ],
   "education": [
@@ -42,7 +42,7 @@
     },
      {
       "institution": "Windward Community College, Kaneohe, HI",
-      "area": "Associates of Science in Biology",
+      "area": "Natural Sciences: Biology",
       "studyType": "A.S.",
       "startDate": "2016-09-01",
       "endDate": "2018-12-15",
