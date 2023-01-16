@@ -15,8 +15,9 @@
   "interests": [
     { "name": "Software Engineering" },
     { "name": "Internet of Things" },
-    { "name": "Automated Farming" },
     { "name": "Computer Vision" },
+    { "name": "Robotics" },
+    { "name": "Computer Security" },
     { "name": "Scuba and Free Diving" },
     { "name": "Botany"}
   ],
