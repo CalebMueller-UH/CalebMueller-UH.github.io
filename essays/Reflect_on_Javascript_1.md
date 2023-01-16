@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Reflecting on Javascript Essay 1 -- ICS 314"
+title: "The Value of Javascript: My Experience as a New Programmer"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-15
 published: true
@@ -9,7 +9,7 @@ labels:
   - Engineering
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/essayPics/water_stones.jpg">
+<img width="200px" class="rounded float-start pe-4" src="/img/essayPics/water_stones.jpg">
 
 Javascript is a widely-used programming language in the field of web development. As a new programmer, my initial experience with Javascript has been positive. Not only is it relatively easy to understand, but it also boasts versatility and practicality in a variety of applications. This essay aims to express my thoughts on Javascript thus far, including its strengths and limitations, as well as my personal experience with athletic software engineering and the practice of daily coding referred to as "WODs."
 
