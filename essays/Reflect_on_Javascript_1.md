@@ -11,19 +11,6 @@ labels:
 
 <img width="400px" class="rounded float-start pe-4" src="../img/water_stones.jpg">
 
----
-layout: essay
-type: essay
-title: "The difficult things will always be difficult"
-# All dates must be YYYY-MM-DD format!
-date: 2016-02-06
-published: false
-labels:
-  - Engineering
----
-
-<img width="200px" class="rounded float-start pe-4" src="../img/difficulty/degree_difficulty.jpg">
-
 Javascript is a widely-used programming language in the field of web development. As a new programmer, my initial experience with Javascript has been positive. Not only is it relatively easy to understand, but it also boasts versatility and practicality in a variety of applications. This essay aims to express my thoughts on Javascript thus far, including its strengths and limitations, as well as my personal experience with athletic software engineering and the practice of daily coding referred to as "WODs."
 
 One of the main reasons why I believe Javascript to be a valuable language to learn is its widespread use. It is one of the most commonly used programming languages worldwide, and is used in the creation of a diverse array of applications, from basic websites to complex web-based systems. This means that as a Javascript developer, there will be many job opportunities available. Furthermore, Javascript's syntax is relatively uncomplicated, and it boasts a large, supportive community, making it an approachable language for beginners.
