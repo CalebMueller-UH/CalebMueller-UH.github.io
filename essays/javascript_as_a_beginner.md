@@ -9,7 +9,8 @@ labels:
   - Engineering
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="img/essayPics/water_stones.jpeg">
+![Water Stones](/img/essayPics/water_stones.jpeg)
+Format: ![Alt Text](url)
 
 
 # Javascript: A Valuable Language for Beginners in Programming
