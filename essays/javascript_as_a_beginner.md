@@ -10,8 +10,6 @@ labels:
 ---
 
 ![Water Stones](/img/essayPics/water_stones.jpeg)
-Format: ![Alt Text](url)
-
 
 # Javascript: A Valuable Language for Beginners in Programming
 
