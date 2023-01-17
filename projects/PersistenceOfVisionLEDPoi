@@ -1,0 +1,39 @@
+---
+layout: project
+type: project
+
+<!---
+@todo Uncomment when a good project image is 
+image: img/cotton/cotton-square.png
+--->
+
+title: "POV Poi"
+date: 2019
+published: true
+labels:
+  - Arduino
+  - Persistence of Vision
+  - Addressable LED's
+  - ESP32
+  - FastLED
+  - Fusion360
+  - Altium
+  
+summary: "LED lightsticks that can draw the contents of JPEG and Bitmap images using addressable RGB LED's by taking advantage of the Persistence of Vision effect"
+---
+
+<!---
+<img class="img-fluid" src="../img/cotton/cotton-header.png">
+--->
+
+
+<hr>
+<pre>
+</pre>
+
+<hr>
+
+<!---
+@todo Uncomment when project git repo is ported over to this account
+Source: <a href="https://github.com/jogarces/ics-313-text-game"><i class="large github icon "></i>jogarces/ics-313-text-game</a>
+--->
