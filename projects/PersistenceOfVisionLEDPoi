@@ -34,7 +34,7 @@ I first saw a similar project in 2017 being used in a performance to display pix
 
 Persistence of vision (PoV) is the phenomenon where an image continues to be perceived for a brief moment after the source of the image has been removed. This is the principle that allows motion pictures and animation to appear smooth and seamless. It occurs because the human eye and brain retain a visual impression of an object for a fraction of a second after the object is no longer in view. This allows the brain to process a series of rapidly changing images as a single, continuous motion.
 
-This project uses APA102/SK9822 addressable RGB LED's.  These small surface mount LED's utilize a +5V V_in, and a Serial Clk and Serial Data Line.  The wiring is such that a string of LED's are connected serially with Clk_out->Clk_in and Data_out->Data_in.  A microcontroller sends information for the entire string to the first LED in the string via serial communication and the first LED's controller strips off the 4-Bytes of the stream needed to assign an RGB value to its LED, and passes through the remainder of the input serial stream to the next LED in-line.  See <a href="https://cpldcpu.wordpress.com/2014/11/30/understanding-the-apa102-superled/"><i class="large github icon "></i>jogarces/ics-313-text-game</a> for a good description of the serial data scheme.
+This project uses APA102/SK9822 addressable RGB LED's.  These small surface mount LED's utilize a +5V V_in, and a Serial Clk and Serial Data Line.  The wiring is such that a string of LED's are connected serially with Clk_out->Clk_in and Data_out->Data_in.  A microcontroller sends information for the entire string to the first LED in the string via serial communication and the first LED's controller strips off the 4-Bytes of the stream needed to assign an RGB value to its LED, and passes through the remainder of the input serial stream to the next LED in-line.  See <a href="https://cpldcpu.wordpress.com/2014/11/30/understanding-the-apa102-superled/"><i class="large github icon "> for a good description of the serial data scheme.
 
 This allows any LED in a string to be assigned a 3-Byte RGB value with an incredibly quick refresh rate.  So fast, in fact, that the PoV effect can be realized.
 
@@ -50,4 +50,4 @@ Currently this project does work, and will display Bitmap images mounted to the 
 
 My future plans with this project include switching the file management system over to TinyFS, transitioning away from FastLED to a custom built LED driver, incorporating IoT features such as device synchronization and server connectivity to facilitate the transfer of images and settings files.
 
-Source: <a href="https://github.com/CalebMueller-UH/pov-poi"><i class="large github icon "></i>jogarces/ics-313-text-game</a>
+Source: <a href="https://github.com/CalebMueller-UH/pov-poi"><i class="large github icon ">
