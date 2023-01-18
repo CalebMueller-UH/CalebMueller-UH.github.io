@@ -1,10 +1,7 @@
 ---
 layout: project
 type: project
-<!---
-@todo Uncomment when a good project image is 
 image: img/cotton/cotton-square.png
---->
 title: "POV Poi"
 date: 2019
 published: true
@@ -18,15 +15,6 @@ labels:
   - Altium
 summary: "LED lightsticks that can draw the contents of JPEG and Bitmap images using addressable RGB LED's by taking advantage of the Persistence of Vision effect"
 ---
-
-<!---
-@todo: get some pictures to show off the project
-<div class="text-center p-4">
-  <img width="200px" src="../img/micromouse/micromouse-robot.png" class="img-thumbnail" >
-  <img width="200px" src="../img/micromouse/micromouse-robot-2.jpg" class="img-thumbnail" >
-  <img width="200px" src="../img/micromouse/micromouse-circuit.png" class="img-thumbnail" >
-</div>
---->
 
 This project was my first deep dive into developing an IoT device, and ultimately was the impetus to entering into the Computer Engineering program at University of Hawaii at Manoa.
 
