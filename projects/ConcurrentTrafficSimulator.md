@@ -16,6 +16,8 @@ summary: "The Concurrent Traffic Simulation project is the fourth project in the
 
 <img width="450px" class="rounded float-start pe-4" src="/img/projectPics/traffic_sim.gif">
 <br>
+</br>
+
 ## Overview
 The Concurrent Traffic Simulation project is the fourth project in the Udacity C++ nanodegree program, which deals with concurrency. The goal of the project is to create a traffic simulation that features vehicles moving along streets and crossing intersections, complete with modeled traffic lights at said intersections. This project uses thread-safe communication protocols between vehicles and intersections to run the simulation concurrently and makes use of CMake, Make, OpenCV, GCC/G++, mutexes, locks, and message queues to accomplish this.  
 <br>
