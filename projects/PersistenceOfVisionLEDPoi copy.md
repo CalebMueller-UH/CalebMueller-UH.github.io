@@ -18,7 +18,7 @@ summary: "LED lightsticks that can display the contents of Bitmap images as they
 
 <img width="750px" class="rounded float-start pe-4" src="/img/projectPics/lightSticks.jpg">
 
-## POV Lightsticks
+## Overview
 This project marked my first deep dive into developing an IoT device and ultimately inspired me to pursue a Computer Engineering degree at the University of Hawaii at Manoa. In 2017, I came across a similar project that used addressable LED's to display pixel art images and wave patterns, utilizing the persistence of vision (PoV) effect. PoV is the phenomenon where an image continues to be perceived for a brief moment after the source of the image has been removed, allowing the brain to process a series of rapidly changing images as a single, continuous motion.
 
 #### Addressable LED's
