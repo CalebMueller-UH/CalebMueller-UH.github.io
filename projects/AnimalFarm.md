@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: 
+image: img/projectPics/animal_farm_full.jpg
 title: "Animal Farm"
 date: 2022
 published: true
@@ -13,30 +13,8 @@ labels:
 - CMake Build System
 summary: "Animal Farm is a series of labs intended to teach the basics of C and C++. It's also intended to introduce good Software Engineering practices."
 ---
-This project was my first deep dive into developing an IoT device, and ultimately was the impetus to entering into the Computer Engineering program at University of Hawaii at Manoa.
+This project was the bulk of a C & C++ course taken in my Junior year of the Computer Engineering program at University of Hawaii at Manoa.  It features several stages all focused on different ways in which to implement a database including arrays and singly-linked lists.  I learned a great deal about programming in this project, and feel like it marked a period of growth for me as a developer.  Going into this class I already had a few years of C++ programming knowledge, but still learned so much more about the supporting ecosystems which make contemporary development possible; technologies such as cmake, version control, and the writing of unit tests.
 
-I first saw a similar project in 2017 being used in a performance to display pixel art images such as Mario, and Waves and was fascinated by how addressable led's could effectively paint pictures in thin air by taking advantage of the persistence of vision effect.  
-
-Persistence of vision (PoV) is the phenomenon where an image continues to be perceived for a brief moment after the source of the image has been removed. This is the principle that allows motion pictures and animation to appear smooth and seamless. It occurs because the human eye and brain retain a visual impression of an object for a fraction of a second after the object is no longer in view. This allows the brain to process a series of rapidly changing images as a single, continuous motion.
-
-This project uses APA102/SK9822 addressable RGB LED's.  These small surface mount LED's utilize a +5V V_in, and a Serial Clk and Serial Data Line.  The wiring is such that a string of LED's are connected serially with Clk_out->Clk_in and Data_out->Data_in.  
-
-A microcontroller sends information for the entire string to the first LED in the string via serial communication and the first LED's controller strips off the 4-Bytes of the stream needed to assign an RGB value to its LED, and passes through the remainder of the input serial stream to the next LED in-line.  See [here](https://cpldcpu.wordpress.com/2014/11/30/understanding-the-apa102-superled/) for a good description of the serial data scheme.
-
-This allows any LED in a string to be assigned a 3-Byte RGB value with an incredibly quick refresh rate.  So fast, in fact, that the PoV effect can be realized.
-
-The controller in this project is a tinyPico development board which makes use of an ESP32-Pico-D4.  
-
-The integration of these components was accomplished using a simple carrier board that simply wired the existing development module footprints and wired them appropriately.  This was done to minimize the ammount of wire connections in an effort to make the final result cleaner and easier to assemble and troubleshoot.
-
-Other hardware features/peripherals included on this carrier board include:
-- A charge controller suitable for regulating the +5V micro-USB V_in to an appropriate charge voltage and current for a small 300mAH LiPo Battery
-- An MPU-6050 Accelerometer/Gyrometer to sense angular position and acceleration to be used for modulating effects
-- A couple MOSFET's used as digitally actuated switches to control supply currents to both the LED Strip and MPU Peripheral
-- A Push-button that is used to control the state and options of the controller.
-
-Currently this project displays Bitmap images mounted to the local ROM.  During the startup sequence the controller will build an array of vectors containing the RGB information for each of the images in memory into heap memory.  The show() command will then display the images in correct orientation.
-
-My future plans with this project include switching the file management system over to TinyFS, transitioning away from FastLED to a custom built LED driver, incorporating IoT features such as device synchronization and server connectivity to facilitate the transfer of images and settings files.
+As I gain more projects I will be sure to update the page to include examples of my growing skillset, but this project is special to me, and I feel as though it earns a place within my portfolio for that reason.
 
 [Link to Github Project Page](https://github.com/CalebMueller-UH/ee205-Animal-Farm)

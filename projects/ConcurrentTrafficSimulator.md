@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: [Animal Farm Picture](img/projectPics/animal_farm_full.jpg)
+image: img/projectPics/traffic_lights.jpg
 title: "Concurrent Traffic Simulator"
 date: 2020
 published: true

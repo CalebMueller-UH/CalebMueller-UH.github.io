@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: 
+image: img/projectPics/led_poi.jpeg
 title: "POV Poi"
 date: 2019
 published: true
@@ -13,7 +13,7 @@ labels:
   - FastLED
   - Fusion360
   - Altium
-summary: "LED lightsticks that can display the contents of Bitmap images as they move through space the Persistence of Vision effect"
+summary: "LED lightsticks that can display the contents of Bitmap images as they move through space by leveraging the Persistence of Vision effect"
 ---
 This project was my first deep dive into developing an IoT device, and ultimately was the impetus to entering into the Computer Engineering program at University of Hawaii at Manoa.
 

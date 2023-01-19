@@ -6,29 +6,68 @@
     "email": "mc61@hawaii.edu",
     "phone": "808-367-9024",
     "website": "https://CalebMueller-UH.github.io",
-    "summary": "As a senior in the Computer Engineering program at the University of Hawaii at Manoa I am eager to apply my knowledge and skills to real-world projects.  My interests lie in embedded systems, the Internet of Things, and computer vision, and am passionate about utilizing technology to drive innovation.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "summary": "As a senior computer engineering student at the University of Hawaii at Manoa, I have a passion for technology and its potential to solve some of the world's most pressing problems. My interests lie in embedded systems, IoT, 3D modeling, and PCB design. I love to express my creative side and bring ideas to life. I am also fascinated by the mysteries of the universe, and always eager to learn more about the world around me. With my skills and passion, I am ready to take on new challenges and make a positive impact in the field of technology.",
+    "location": {
+      "address": "",
+      "postalCode": "96822",
+      "city": "Honolulu",
+      "countryCode": "USA",
+      "state": "Hawaii"
+    },
     "profiles": [
-      { "network": "github", "username": "CalebMueller-UH", "url": "http://github.com/CalebMueller-UH" }
+      {
+        "network": "github",
+        "username": "CalebMueller-UH",
+        "url": "http://github.com/CalebMueller-UH"
+      }
     ]
   },
   "interests": [
-    { "name": "Software Engineering" },
-    { "name": "Internet of Things" },
-    { "name": "Computer Vision" },
-    { "name": "Robotics" },
-    { "name": "Computer Security" },
-    { "name": "Scuba and Free Diving" },
-    { "name": "Botany"}
+    {
+      "name": "Software Engineering"
+    },
+    {
+      "name": "Internet of Things"
+    },
+    {
+      "name": "Computer Vision"
+    },
+    {
+      "name": "Robotics"
+    },
+    {
+      "name": "Computer Security"
+    },
+    {
+      "name": "Scuba and Free Diving"
+    },
+    {
+      "name": "Botany"
+    }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "ARM Assembly", "C", "C++", "Javascript", "Python", "SystemVerilog", "Bash", "Espressif IDF", "Arduino", "STM32Cube" ]
+      "keywords": [
+        "ARM Assembly",
+        "C",
+        "C++",
+        "Javascript",
+        "Python",
+        "SystemVerilog",
+        "Bash",
+        "Espressif IDF",
+        "Arduino",
+        "STM32Cube"
+      ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "Ubuntu", "FreeRTOS"]
+      "keywords": [
+        "Windows",
+        "Ubuntu",
+        "FreeRTOS"
+      ]
     }
   ],
   "education": [
@@ -38,16 +77,18 @@
       "studyType": "B.S.",
       "startDate": "2019-09-01",
       "endDate": "Present",
-      "courses": [
-      ]
+      "courses": []
     },
-     {
+    {
       "institution": "Windward Community College, Kaneohe, HI",
       "area": "Natural Sciences: Biology",
       "studyType": "A.S.",
       "startDate": "2016-09-01",
       "endDate": "2018-12-15",
-      "courses": ["Ethnopharmacology", "Biophytotechnology" ]
+      "courses": [
+        "Ethnopharmacology",
+        "Biophytotechnology"
+      ]
     }
   ],
   "work": [
@@ -58,8 +99,7 @@
       "startDate": "2022-10-01",
       "endDate": "Present",
       "summary": "Assembly, and software engineering for autonomous submersable vehicles.",
-      "highlights": [
-      ]
+      "highlights": []
     },
   ],
   "references": [
