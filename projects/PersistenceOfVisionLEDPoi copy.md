@@ -24,16 +24,16 @@ This project marked my first deep dive into developing an IoT device and ultimat
 #### Addressable LED's
 I utilized APA102/SK9822 addressable RGB LED's for this project. These small surface-mount LED's use a +5V V_in and a Serial Clk and Serial Data Line. The wiring connects a string of LED's serially, with Clk_out->Clk_in and Data_out->Data_in. A microcontroller sends information for the entire string to the first LED in the string via serial communication, and the first LED's controller assigns an RGB value to its LED and passes the remaining input serial stream to the next LED in the string.
 
-### Microcontroller/SOC's
+#### Microcontroller/SOC's
 The controller for this project is a tinyPico development board that utilizes an ESP32-Pico-D4. I used a simple carrier board that connected the development module footprints to their various voltage sources and GPIO pins, to minimize wired connections and make the final result cleaner. The carrier board also served as a simple prototype to test the circuit before integrating all of the components into a single board layout.
 
-### Carrier Board Details
+#### Carrier Board Details
 Other hardware features/peripherals on the carrier board include: a charge controller for regulating the +5V micro-USB V_in to an appropriate charge voltage and current to manage a 300mAH LiPo Battery, a 3v3 voltage regulator to supply power to the esp32, mpu, and RGB strip, an MPU-6050 Accelerometer/Gyrometer to sense angular position and acceleration to modulate effects, MOSFETs used as digitally actuated switches to control supply currents to the LED Strip and MPU peripheral, and a push-button that controls the state and options of the controller.
 
-### Current Functionality
+#### Current Functionality
 Currently, this project displays Bitmap images mounted to the local ROM. During the startup sequence, the controller builds an array of vectors containing the RGB information for each image in memory into heap memory. The microcontroller is programmed as a simple state machine that can switch between image patterns and programs through the push-button interface. There is also a click-type sensing algorithm implemented into the button control code which can differentiate between single-clicks, double-clicks, and long presses.  This feature allows different modes such as brightness adjustment and pattern-auto-play to be set with a the single-button interface. 
 
-### Plans for the Future
+#### Plans for the Future
 In the future, I plan to switch the file management system over to tinyFS, transition away from the FastLED library to a custom-built LED driver, and incorporate IoT features such as device synchronization and server connectivity to facilitate the transfer of images and settings files, as well as develop either a mobile app or web based GUI to control the device the device wirelessly.
 
 [Link to Github Project Page](https://github.com/CalebMueller-UH/pov-poi)
