@@ -26,9 +26,9 @@ That experience made a few things apparent to me. First, I really did have a pas
 
 In the future, I hope to further develop my skills in programming and designing more sophisticated embedded systems and IoT projects. I also hope to gain experience in developing software for different platforms, such as mobile and web applications, and explore how these platforms can intersect with the exciting advances being made in technologies such as artificial intelligence and machine learning.
 
-Overall, my passion for creating and building things, combined with that experience building that first project, has led me to pursue a career in computer and software engineering. I look forward to continuing to develop my skills and knowledge in the field and hope to make a positive impact on the world through what I create.
+Overall, my passion for creating and building things, combined with that first, and several more experiences since, have led me to pursue a career in computer and software engineering. I look forward to continuing to develop my skills and knowledge in the field and hope to make a positive impact on the world through what I create.
 
 ##### Here's a bonus: 
-If you made it this far, you may be interested in this desmos graph I created around the time the events discussed in this essay took place.  Have fun, and enjoy!
+If you made it this far, you may be interested in this desmos graph I created around the time as the events discussed in this essay took place.  Have fun, and enjoy!
 
 [Desmos 4-term Spirograph](https://www.desmos.com/calculator/gncahk4kea)
