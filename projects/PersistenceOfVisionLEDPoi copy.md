@@ -29,16 +29,17 @@ This allows any LED in a string to be assigned a 3-Byte RGB value with an incred
 
 The controller in this project is a tinyPico development board which makes use of an ESP32-Pico-D4.  
 
-The integration of these components was accomplished using a simple carrier board that simply wired the existing development module footprints and wired them appropriately.  This was done to minimize the ammount of wire connections in an effort to make the final result cleaner and easier to assemble and troubleshoot.
+The integration of these components was accomplished using a simple carrier board that simply used the existing development module footprints and connected them to their various voltage sources and GPIO pins.  This carrier board approach was take to minimize the ammount of wired connections in an effort to make the final result cleaner, and to serve as a simple prototype to test the circuit prior to integrating all of the components into a single board layout.
 
-Other hardware features/peripherals included on this carrier board include:
-- A charge controller suitable for regulating the +5V micro-USB V_in to an appropriate charge voltage and current for a small 300mAH LiPo Battery
+Other hardware features/peripherals included on the carrier board include:
+- A charge controller suitable for regulating the +5V micro-USB V_in to an appropriate charge voltage and current to manage a 300mAH LiPo Battery
+- A 3v3 voltage regulator to supply power to the esp32, mpu, and RGB strip (note, APA102's nominal V_in = 5V!)
 - An MPU-6050 Accelerometer/Gyrometer to sense angular position and acceleration to be used for modulating effects
 - A couple MOSFET's used as digitally actuated switches to control supply currents to both the LED Strip and MPU Peripheral
 - A Push-button that is used to control the state and options of the controller.
 
-Currently this project displays Bitmap images mounted to the local ROM.  During the startup sequence the controller will build an array of vectors containing the RGB information for each of the images in memory into heap memory.  The show() command will then display the images in correct orientation.
+Currently this project displays Bitmap images mounted to the local ROM.  During the startup sequence the controller will build an array of vectors containing the RGB information for each of the images in memory into heap memory.  The microcontroller is programmed as a simple state machine that can switch between image patterns and programs through the push-button interface.  There is also click-type sensing implemented to allow different modes such as brightness adjustment and pattern-auto-play to take place.
 
-My future plans with this project include switching the file management system over to TinyFS, transitioning away from FastLED to a custom built LED driver, incorporating IoT features such as device synchronization and server connectivity to facilitate the transfer of images and settings files.
+My future plans with this project, when I get a chance, include switching the file management system over to tinyFS, transitioning away from the FastLED library to a custom built LED driver, and incorporating IoT features such as device synchronization and server connectivity to facilitate the transfer of images and settings files.
 
 [Link to Github Project Page](https://github.com/CalebMueller-UH/pov-poi)

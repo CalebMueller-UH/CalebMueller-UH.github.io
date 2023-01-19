@@ -6,16 +6,11 @@ title: "Concurrent Traffic Simulator"
 date: 2020
 published: true
 labels:
-    - C++-nanodegree
-    - CMake-Make
-    - OpenCV-gcc/g++
-    - Concurrent-simulation
     - Traffic-simulation
-    - Thread-safe-communication
-    - Mutexes-locks
-    - Message-queues    
-    - Thread-queue
-    - Move-semantics
+    - Concurrency
+    - Mutexes, Locks, & Thread-Safe Communication
+    - Message & Thread Queues    
+    - Move Semantics
 summary: "The Concurrent Traffic Simulation project is the fourth project in the Udacity C++ nanodegree program, which deals with concurrency. The goal of the project is to create a traffic simulation that features vehicles moving along streets and crossing intersections, complete with modeled traffic lights at said intersections using thread-safe communication protocols, and using CMake, Make, OpenCV, GCC/G++, mutexes, locks, and message queues to accomplish this."
 ---
 

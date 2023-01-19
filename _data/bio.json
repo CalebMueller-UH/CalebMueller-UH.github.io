@@ -6,7 +6,7 @@
     "email": "mc61@hawaii.edu",
     "phone": "808-367-9024",
     "website": "https://CalebMueller-UH.github.io",
-    "summary": "As a senior computer engineering student at the University of Hawaii at Manoa, I have a passion for technology and its potential to solve some of the world's most pressing problems. My interests lie in embedded systems, IoT, 3D modeling, and PCB design. I love to express my creative side and bring ideas to life. I am also fascinated by the mysteries of the universe, and always eager to learn more about the world around me. With my skills and passion, I am ready to take on new challenges and make a positive impact in the field of technology.",
+    "summary": "As a senior computer engineering student at the University of Hawaii at Manoa, graduating in December of 2023, I have a passion for technology and its potential to solve some of the world's most pressing problems. My interests lie in embedded systems, IoT, 3D modeling, and PCB design. I love to express my creative side and bring ideas to life. I am also fascinated by the mysteries of the universe, and always eager to learn more about the world around me. With my skills and passion, I am ready to take on new challenges and make a positive impact in the field of technology.",
     "location": {
       "address": "",
       "postalCode": "96822",
@@ -39,10 +39,10 @@
       "name": "Computer Security"
     },
     {
-      "name": "Scuba and Free Diving"
+      "name": "Scuba Diving"
     },
     {
-      "name": "Botany"
+      "name": "Botany & Horticulture"
     }
   ],
   "skills": [
@@ -73,7 +73,7 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Engineering (expected Spring, 2024)",
+      "area": "Computer Engineering (expected Fall, 2023)",
       "studyType": "B.S.",
       "startDate": "2019-09-01",
       "endDate": "Present",
@@ -85,9 +85,9 @@
       "studyType": "A.S.",
       "startDate": "2016-09-01",
       "endDate": "2018-12-15",
-      "courses": [
+      "Certificates of Achievement": [
         "Ethnopharmacology",
-        "Biophytotechnology"
+        "Bio-Phytotechnology"
       ]
     }
   ],
