@@ -18,32 +18,22 @@ summary: "LED lightsticks that can display the contents of Bitmap images as they
 
 <img width="750px" class="rounded float-start pe-4" src="/img/projectPics/lightSticks.jpg">
 
+## POV Lightsticks
+This project marked my first deep dive into developing an IoT device and ultimately inspired me to pursue a Computer Engineering degree at the University of Hawaii at Manoa. In 2017, I came across a similar project that used addressable LED's to display pixel art images and wave patterns, utilizing the persistence of vision (PoV) effect. PoV is the phenomenon where an image continues to be perceived for a brief moment after the source of the image has been removed, allowing the brain to process a series of rapidly changing images as a single, continuous motion.
 
-This project was my first deep dive into developing an IoT device, and ultimately was the impetus to entering into the Computer Engineering program at University of Hawaii at Manoa.
+#### Addressable LED's
+I utilized APA102/SK9822 addressable RGB LED's for this project. These small surface-mount LED's use a +5V V_in and a Serial Clk and Serial Data Line. The wiring connects a string of LED's serially, with Clk_out->Clk_in and Data_out->Data_in. A microcontroller sends information for the entire string to the first LED in the string via serial communication, and the first LED's controller assigns an RGB value to its LED and passes the remaining input serial stream to the next LED in the string.
 
-I first saw a similar project in 2017 being used in a performance to display pixel art images such as Mario, and wave patterns, and was fascinated by how addressable led's could effectively paint pictures in thin air by taking advantage of the persistence of vision effect.  
+### Microcontroller/SOC's
+The controller for this project is a tinyPico development board that utilizes an ESP32-Pico-D4. I used a simple carrier board that connected the development module footprints to their various voltage sources and GPIO pins, to minimize wired connections and make the final result cleaner. The carrier board also served as a simple prototype to test the circuit before integrating all of the components into a single board layout.
 
-Persistence of vision (PoV) is the phenomenon where an image continues to be perceived for a brief moment after the source of the image has been removed. This is the principle that allows motion pictures and animation to appear smooth and seamless. It occurs because the human eye and brain retain a visual impression of an object for a fraction of a second after the object is no longer in view. This allows the brain to process a series of rapidly changing images as a single, continuous motion.
+### Carrier Board Details
+Other hardware features/peripherals on the carrier board include: a charge controller for regulating the +5V micro-USB V_in to an appropriate charge voltage and current to manage a 300mAH LiPo Battery, a 3v3 voltage regulator to supply power to the esp32, mpu, and RGB strip, an MPU-6050 Accelerometer/Gyrometer to sense angular position and acceleration to modulate effects, MOSFETs used as digitally actuated switches to control supply currents to the LED Strip and MPU peripheral, and a push-button that controls the state and options of the controller.
 
-This project uses APA102/SK9822 addressable RGB LED's.  These small surface mount LED's utilize a +5V V_in, and a Serial Clk and Serial Data Line.  The wiring is such that a string of LED's are connected serially with Clk_out->Clk_in and Data_out->Data_in.  
+### Current Functionality
+Currently, this project displays Bitmap images mounted to the local ROM. During the startup sequence, the controller builds an array of vectors containing the RGB information for each image in memory into heap memory. The microcontroller is programmed as a simple state machine that can switch between image patterns and programs through the push-button interface. There is also a click-type sensing algorithm implemented into the button control code which can differentiate between single-clicks, double-clicks, and long presses.  This feature allows different modes such as brightness adjustment and pattern-auto-play to be set with a the single-button interface. 
 
-A microcontroller sends information for the entire string to the first LED in the string via serial communication and the first LED's controller strips off the 4-Bytes of the stream needed to assign an RGB value to its LED, and passes through the remainder of the input serial stream to the next LED in-line.  See [here](https://cpldcpu.wordpress.com/2014/11/30/understanding-the-apa102-superled/) for a good description of the serial data scheme.
-
-This allows any LED in a string to be assigned a 3-Byte RGB value with an incredibly quick refresh rate.  So fast, in fact, that the PoV effect can be realized.
-
-The controller in this project is a tinyPico development board which makes use of an ESP32-Pico-D4.  
-
-The integration of these components was accomplished using a simple carrier board that simply used the existing development module footprints and connected them to their various voltage sources and GPIO pins.  This carrier board approach was take to minimize the ammount of wired connections in an effort to make the final result cleaner, and to serve as a simple prototype to test the circuit prior to integrating all of the components into a single board layout.
-
-Other hardware features/peripherals included on the carrier board include:
-- A charge controller suitable for regulating the +5V micro-USB V_in to an appropriate charge voltage and current to manage a 300mAH LiPo Battery
-- A 3v3 voltage regulator to supply power to the esp32, mpu, and RGB strip (note, APA102's nominal V_in = 5V!)
-- An MPU-6050 Accelerometer/Gyrometer to sense angular position and acceleration to be used for modulating effects
-- A couple MOSFET's used as digitally actuated switches to control supply currents to both the LED Strip and MPU Peripheral
-- A Push-button that is used to control the state and options of the controller.
-
-Currently this project displays Bitmap images mounted to the local ROM.  During the startup sequence the controller will build an array of vectors containing the RGB information for each of the images in memory into heap memory.  The microcontroller is programmed as a simple state machine that can switch between image patterns and programs through the push-button interface.  There is also click-type sensing implemented to allow different modes such as brightness adjustment and pattern-auto-play to take place.
-
-My future plans with this project, when I get a chance, include switching the file management system over to tinyFS, transitioning away from the FastLED library to a custom built LED driver, and incorporating IoT features such as device synchronization and server connectivity to facilitate the transfer of images and settings files.
+### Plans for the Future
+In the future, I plan to switch the file management system over to tinyFS, transition away from the FastLED library to a custom-built LED driver, and incorporate IoT features such as device synchronization and server connectivity to facilitate the transfer of images and settings files, as well as develop either a mobile app or web based GUI to control the device the device wirelessly.
 
 [Link to Github Project Page](https://github.com/CalebMueller-UH/pov-poi)
