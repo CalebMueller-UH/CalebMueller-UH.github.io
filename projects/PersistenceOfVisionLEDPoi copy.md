@@ -15,6 +15,10 @@ labels:
   - Altium
 summary: "LED lightsticks that can display the contents of Bitmap images as they move through space by leveraging the Persistence of Vision effect"
 ---
+
+<img width="750px" class="rounded float-start pe-4" src="/img/projectPics/lightSticks.jpg">
+
+
 This project was my first deep dive into developing an IoT device, and ultimately was the impetus to entering into the Computer Engineering program at University of Hawaii at Manoa.
 
 I first saw a similar project in 2017 being used in a performance to display pixel art images such as Mario, and Waves and was fascinated by how addressable led's could effectively paint pictures in thin air by taking advantage of the persistence of vision effect.  
