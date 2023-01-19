@@ -39,10 +39,10 @@
       "name": "Computer Security"
     },
     {
-      "name": "Scuba and Free Diving"
+      "name": "Scuba Diving"
     },
     {
-      "name": "Botany"
+      "name": "Botany & Horticulture"
     }
   ],
   "skills": [
@@ -73,7 +73,7 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Engineering (expected Spring, 2024)",
+      "area": "Computer Engineering (expected Fall, 2023)",
       "studyType": "B.S.",
       "startDate": "2019-09-01",
       "endDate": "Present",
@@ -85,9 +85,9 @@
       "studyType": "A.S.",
       "startDate": "2016-09-01",
       "endDate": "2018-12-15",
-      "courses": [
+      "Certificates of Achievement": [
         "Ethnopharmacology",
-        "Biophytotechnology"
+        "Bio-Phytotechnology"
       ]
     }
   ],
