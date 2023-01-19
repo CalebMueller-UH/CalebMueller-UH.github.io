@@ -40,9 +40,6 @@
     },
     {
       "name": "Scuba Diving"
-    },
-    {
-      "name": "Botany & Horticulture"
     }
   ],
   "skills": [
@@ -55,10 +52,11 @@
         "Javascript",
         "Python",
         "SystemVerilog",
-        "Bash",
+        "Bash Scripting",
         "Espressif IDF",
         "Arduino",
-        "STM32Cube"
+        "STM32Cube",
+        "Version Control (git)"
       ]
     },
     {
