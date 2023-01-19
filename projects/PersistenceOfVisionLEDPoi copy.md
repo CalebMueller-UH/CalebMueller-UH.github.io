@@ -21,7 +21,7 @@ summary: "LED lightsticks that can display the contents of Bitmap images as they
 
 This project was my first deep dive into developing an IoT device, and ultimately was the impetus to entering into the Computer Engineering program at University of Hawaii at Manoa.
 
-I first saw a similar project in 2017 being used in a performance to display pixel art images such as Mario, and Waves and was fascinated by how addressable led's could effectively paint pictures in thin air by taking advantage of the persistence of vision effect.  
+I first saw a similar project in 2017 being used in a performance to display pixel art images such as Mario, and wave patterns, and was fascinated by how addressable led's could effectively paint pictures in thin air by taking advantage of the persistence of vision effect.  
 
 Persistence of vision (PoV) is the phenomenon where an image continues to be perceived for a brief moment after the source of the image has been removed. This is the principle that allows motion pictures and animation to appear smooth and seamless. It occurs because the human eye and brain retain a visual impression of an object for a fraction of a second after the object is no longer in view. This allows the brain to process a series of rapidly changing images as a single, continuous motion.
 
