@@ -6,30 +6,40 @@
 /* See https://getbootstrap.com/docs/5.2/customize/css-variables/#root-variables for variables to override. */
 :root {
     --tf-debugRed: #ff0000;
-    --tf-almostWhite: #ebebeb;
+    --tf-offWhite1: #ebebeb;
     --tf-grey1: #adadad;
     --tf-grey2: #737373;
     --tf-grey3: #464545;
     --tf-slate1: #3b5889;
     --tf-linkBlue: #003cff;
-    --tf-nearBlack1: #1d1d1d;
+    --tf-bgBlack1: #1d1d1d;
+    --tf-bgBlack2: #414040;
     --bs-font-sans-serif: "Open Sans", sans-serif;
-    --bs-font-sans-serif-color: var(--tf-almostWhite);
+    --bs-font-sans-serif-color: var(--tf-offWhite1);
     --bs-link-color: var(--tf-linkBlue);
     --tf-pill-bg: var(--tf-grey3);
-    --tf-icon-fill: var(--tf-almostWhite);
-    --tf-page-bg-color: var(--tf-nearBlack1);
+    --tf-icon-fill: var(--tf-offWhite1);
+    --tf-page-bg-color: var(--tf-bgBlack1);
     --tf-footer-bg-color: var(--tf-grey2);
-    --tf-projects-bg-color: var(--tf-nearBlack1);
-    --tf-essays-bg-color: var(--tf-nearBlack1);
+    --tf-projects-bg-color: var(--tf-bgBlack1);
+    --tf-essays-bg-color: var(--tf-bgBlack1);
 }
 
+.essay-page {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+}
+
+.project-page {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+}
+
+/* Main Page Heading Stylization */
 h1,
 h2,
 h3,
 h4 {
     font-family: Rubik;
-    color: var(--tf-almostWhite);
+    color: var(--tf-offWhite1);
 }
 
 h5 {
@@ -37,6 +47,7 @@ h5 {
     color: #000000;
 }
 
+/* Main Page Text Stylization */
 body {
     font-family: var(--bs-font-sans-serif);
     color: var(--bs-font-sans-serif-color);
@@ -46,7 +57,7 @@ body {
 /* Format social media icons */
 .tf-social {
     display: inline-block;
-    fill: var(--tf-almostWhite);
+    fill: var(--tf-offWhite1);
     height: 1.5em;
     vertical-align: -.1em;
     width: 1.5em;
@@ -64,17 +75,17 @@ a {
 
 /* Add class to format the text inside the cards */
 .card-text {
-    color: var(--tf-nearBlack1);
+    color: var(--tf-bgBlack1);
 }
 
 /* Add class to format the buttons */
 .btn {
     background-color: var(--tf-slate1);
-    color: var(--tf-almostWhite);
+    color: var(--tf-offWhite1);
 }
 
 /* Add class to format the buttons on hover */
 .btn:hover {
     background-color: var(--tf-grey1);
-    color: var(--tf-nearBlack1);
+    color: var(--tf-bgBlack1);
 }
