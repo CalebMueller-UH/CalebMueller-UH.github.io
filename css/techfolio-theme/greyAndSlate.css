@@ -1,0 +1,68 @@
+/* Grey and Slate Theme: modifies the default theme to feature a sleek grey and slate color scheme. */
+
+/* Use Open Sans as the default font. */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700");
+
+/* See https://getbootstrap.com/docs/5.2/customize/css-variables/#root-variables for variables to override. */
+:root {
+    --tf-debugRed: #ff0000;
+    --tf-almostWhite: #ebebeb;
+    --tf-grey1: #adadad;
+    --tf-grey2: #737373;
+    --tf-grey3: #464545;
+    --tf-slate1: #3b5889;
+    --tf-linkBlue: #003cff;
+    --tf-nearBlack1: #242424;
+    --bs-font-sans-serif: "Open Sans", sans-serif;
+    --bs-link-color: var(--tf-linkBlue);
+    --tf-pill-bg: var(--tf-grey3);
+    --tf-icon-fill: var(--tf-slate1);
+    --tf-page-bg-color: var(--tf-grey1);
+    --tf-footer-bg-color: var(--tf-grey2);
+    --tf-projects-bg-color: var(--tf-grey2);
+    --tf-essays-bg-color: var(--tf-almostWhite);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--tf-nearBlack1);
+}
+
+/* Format social media icons */
+.tf-social {
+    display: inline-block;
+    fill: var(--tf-slate1);
+    height: 1.5em;
+    vertical-align: -.1em;
+    width: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Simplify the styling of the bottom of Essay cards. */
+.card-footer {
+    background-color: var(--tf-grey1);
+    border-top: none;
+}
+
+/* Add class to format the text inside the cards */
+.card-text {
+    color: var(--tf-nearBlack1);
+}
+
+/* Add class to format the buttons */
+.btn {
+    background-color: var(--tf-slate1);
+    color: var(--tf-almostWhite);
+}
+
+/* Add class to format the buttons on hover */
+.btn:hover {
+    background-color: var(--tf-grey1);
+    color: var(--tf-nearBlack1);
+}

@@ -8,9 +8,7 @@ published: true
 labels:
 - Object-oriented Programming
 - C++
-- Linked List Database Implementation
-- Binary Search Tree
-- CMake Build System
+- Linked List Database
 summary: "Animal Farm is a series of labs intended to teach the basics of C and C++. It's also intended to introduce good Software Engineering practices."
 ---
 This project represents the final product of what was the bulk of a C & C++ course taken in my Junior year of the Computer Engineering program at University of Hawaii at Manoa.  It features several stages all focused on different ways in which to implement a database, to include arrays and singly-linked lists.  I learned a great deal about programming throughout this project, and it marks a period of growth for me as a developer.  Going into this class I already had a few years of C++ programming knowledge, but still learned an incredible amount more about the supporting ecosystems which make contemporary development possible; technologies such as cmake, version control, and the writing of unit tests.

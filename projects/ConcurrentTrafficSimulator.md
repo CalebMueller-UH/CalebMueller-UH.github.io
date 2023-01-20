@@ -6,12 +6,10 @@ title: "Concurrent Traffic Simulator"
 date: 2020
 published: true
 labels:
-    - Traffic-simulation
     - Concurrency
-    - Mutexes, Locks, & Thread-Safe Communication
+    - Mutexes & Locks
     - Message & Thread Queues    
-    - Move Semantics
-summary: "The Concurrent Traffic Simulation project is the fourth project in the Udacity C++ nanodegree program. The goal of the project was to create a traffic simulation that features vehicles moving along streets and crossing intersections using concurrent programming."
+summary: "A traffic simulation that features vehicles moving along streets and crossing intersections using concurrency programming techniques."
 ---
 
 <img width="450px" class="rounded float-start pe-4" src="/img/projectPics/traffic_sim.gif">

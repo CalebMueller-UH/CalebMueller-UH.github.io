@@ -6,7 +6,8 @@ title: "Javascript: The Good, The Bad, and The Future"
 date: 2023-01-15
 published: true
 labels:
-  - Engineering
+  - JavaScript
+  - WODs
 ---
 
 <img width="350px" class="rounded float-start pe-4" src="/img/essayPics/clint_eastwood_tgtbtu.jpg">

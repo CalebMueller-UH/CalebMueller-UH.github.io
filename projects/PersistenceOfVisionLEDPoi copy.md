@@ -8,11 +8,6 @@ published: true
 labels:
   - Arduino
   - Persistence of Vision
-  - Addressable LEDs
-  - ESP32
-  - FastLED
-  - Fusion360
-  - Altium
 summary: "LED lightsticks that can display the contents of Bitmap images as they move through space by leveraging the Persistence of Vision effect."
 ---
 
