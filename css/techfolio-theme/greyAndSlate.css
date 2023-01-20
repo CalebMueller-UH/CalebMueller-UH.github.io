@@ -25,14 +25,6 @@
     --tf-essays-bg-color: var(--tf-bgBlack1);
 }
 
-.essay-page {
-    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
-}
-
-.project-page {
-    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
-}
-
 /* Main Page Heading Stylization */
 h1,
 h2,
@@ -88,4 +80,34 @@ a {
 .btn:hover {
     background-color: var(--tf-grey1);
     color: var(--tf-bgBlack1);
+}
+
+.essay-page {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+}
+
+.essay-page h1,
+h2,
+h3,
+h4,
+h6 {
+    font-family: Rubik;
+    color: var(--tf-offWhite1);
+}
+
+.essay-page h5 {
+    font-family: Rubik;
+    color: var(--tf-bgBlack1);
+}
+
+.essay-page .highlight {
+    background: conic-gradient(ellipse farthest-corner, var(--tf-grey2), var(--tf-grey3));
+}
+
+.project-page {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+}
+
+.project-page .highlight {
+    background: conic-gradient(ellipse farthest-corner, var(--tf-grey2), var(--tf-grey3));
 }
