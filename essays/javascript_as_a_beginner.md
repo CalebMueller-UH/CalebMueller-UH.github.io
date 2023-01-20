@@ -20,13 +20,13 @@ This essay aims to express my thoughts on Javascript thus far, including its str
 ## Strengths of Javascript
 What I like about Javascript is that it's easy to understand, versatile, and has found use across many applications that run the web today.  It is one of the most commonly used programming languages worldwide to create various applications, from basic websites to complex web-based systems.  Most, if not all, modern web browsers support Javascript by default.  As a Javascript developer, there are ample opportunities to find work from real-deal companies such as Google and Meta.  Javascript's syntax is relatively uncomplicated, and it boasts a large, supportive community, making it an approachable language for beginners; it integrates exceptionally well with other languages and tools.  Furthermore, there are so many libraries to leverage a particular application using JS.
 
-My interest in JS stems from what I've read about the Web Of Things (WOT).  As opposed to the Internet-Of-Things (IoT), WoT uses existing web infrastructure and design paradigms, and JS is undoubtedly square within that purview.  Working with NodeRed has given me a glimpse into the potential of how JS can be integrated usefully into projects that could make use of it for many reasons.
+My interest in JS stems from what I've read about the Web Of Things (WOT).  As opposed to the Internet-Of-Things (IoT), WoT uses existing web infrastructure and design paradigms, and JS is undoubtedly square within that purview.  Working with NodeRed has given me a glimpse into the potential of how JS can be integrated into projects that could make use of it for many reasons.
 <br></br>
 
 ## Javascript Pitfalls
 If JS is so great, then we should all be using it, right?  Well, maybe not.  While it is an incredibly friendly language, it is less optimized for resource-constrained devices such as those living on any IoT infrastructure's edge.  In addition, it is an interpreted language and thus has a larger footprint than a compiled language such as C, Rust, or even compiled Python.  Another drawback is the execution speed.  The JavaScript Document Object Model is slow (read: sllloooowwww....) compared to languages better suited to real-time applications.
 
-Added to this is that any JS code used within a web application is visible to those using it.  This is likely true of compiled languages through reverse engineering a binary.  Still, I would wager to counter-argue that the energy threshold for dissecting a mountain of assembly code is much steeper than looking at source code neatly stacked within a browser's inspection pane.
+Added to this is the fact that any JS code used within a web application is visible to those using it.  This is arguably true of compiled languages as well through reverse engineering a binary.  Still, I would wager to counter-argue that the energy threshold for dissecting a mountain of assembly code is much steeper than that of peering at neatly stack source code within a browser's inspection pane.
 <br></br>
 
 ## Javascript's Utility Going into the Future
