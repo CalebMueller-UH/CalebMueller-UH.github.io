@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Javascript: A Beginning"
+title: "Javascript: The Good, The Bad, and The Future"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-15
 published: true
@@ -11,7 +11,7 @@ labels:
 
 ![Water Stones](/img/essayPics/water_stones.jpeg)
 
-# Javascript: A Valuable Language for Beginners in Programming
+# What is JavaScript?
 Javascript (JS) is a widely-used programming language in web development.  As a new programmer, my initial experience with Javascript has been positive.  Before beginning my ICS 314 class that deals primarily with Javascript, I had limited exposure to the language through working with NodeRed.  The syntax is very similar to C++, but it is not a strongly typed language lending to its flexibility in dealing with troves of different types of data-- for better or worse.  For example, suppose a particular use case would benefit from more strict type-checking instead.  In that case, the closely related language of Typescript also exists, which I understand is Javascript, just with types.  
 
 This essay aims to express my thoughts on Javascript thus far, including its strengths and limitations, my personal experience with athletic software engineering, and the practice of daily coding, referred to as WODs.
@@ -40,4 +40,7 @@ From a software engineering perspective, I believe Javascript to be a great prog
 ## The Value of "WODs"
 The ICS 314 class I'm currently taking is pushing the pedagogy of "Athletic Software Engineering" through daily practice problems called "Workouts-Of-The-Day" or WODs.  Thankfully this type of WOD doesn't involve burpees.  Instead, they aim to rapidly increase fluency and skill in a methodology similar to athletic training.  Frequent practice, successively increasing difficulty, and active engagement is more beneficial to acquiring and developing talent than the passive absorption of information typical in the academic setting.  WODs can be challenging, but so long as the difficulty is set optimally, this process is both manageable and enjoyable.
 <br></br>
+
+![The Good, The Bad, The Ugly](/img/essayPics/clint_eastwood_tgtbtu.jpeg)
+
 
