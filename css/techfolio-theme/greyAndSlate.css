@@ -13,7 +13,7 @@
     --tf-slate1: #3b5889;
     --tf-linkBlue: #003cff;
     --tf-nearBlack1: #1d1d1d;
-    --bs-font-sans-serif: "Open Sans", sans-serif, font-weight: 700;
+    --bs-font-sans-serif: "Open Sans", sans-serif;
     --bs-font-sans-serif-color: var(--tf-almostWhite);
     --bs-link-color: var(--tf-linkBlue);
     --tf-pill-bg: var(--tf-grey3);
@@ -40,6 +40,7 @@ h5 {
 body {
     font-family: var(--bs-font-sans-serif);
     color: var(--bs-font-sans-serif-color);
+    font-weight: 700
 }
 
 /* Format social media icons */
