@@ -41,6 +41,6 @@ From a software engineering perspective, I believe Javascript to be a great prog
 The ICS 314 class I'm currently taking is pushing the pedagogy of "Athletic Software Engineering" through daily practice problems called "Workouts-Of-The-Day" or WODs.  Thankfully this type of WOD doesn't involve burpees.  Instead, they aim to rapidly increase fluency and skill in a methodology similar to athletic training.  Frequent practice, successively increasing difficulty, and active engagement is more beneficial to acquiring and developing talent than the passive absorption of information typical in the academic setting.  WODs can be challenging, but so long as the difficulty is set optimally, this process is both manageable and enjoyable.
 <br></br>
 
-![The Good, The Bad, The Ugly](/img/essayPics/clint_eastwood_tgtbtu.jpeg)
+![The Good, The Bad, The Ugly](/img/essayPics/clint_eastwood_tgtbtu.jpg)
 
 
