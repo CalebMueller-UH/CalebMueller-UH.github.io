@@ -119,3 +119,7 @@ a {
 .project-page .highlight {
     background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
 }
+
+.bg-gradient {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+}
