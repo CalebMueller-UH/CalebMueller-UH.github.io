@@ -103,25 +103,11 @@ a {
 .essay-page {
     background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
     color: var(--tf-offWhite1);
-    font-weight: 400
-}
-
-.essay-page h1,
-h2,
-h3,
-h4,
-h6 {
-    font-family: Rubik;
-    color: var(--tf-offWhite1);
-}
-
-.essay-page h5 {
-    font-family: Rubik;
-    color: var(--tf-bgBlack1);
+    font-weight: 400;
 }
 
 .essay-page .highlight {
-    background: conic-gradient(ellipse farthest-corner, var(--tf-grey2), var(--tf-grey3));
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
 }
 
 .project-page {
@@ -131,5 +117,5 @@ h6 {
 }
 
 .project-page .highlight {
-    background: conic-gradient(ellipse farthest-corner, var(--tf-grey2), var(--tf-grey3));
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
 }
