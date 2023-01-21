@@ -27,7 +27,12 @@ In the future, I plan to develop my skills in programming further and design mor
 
 Overall, my passion for creating and building things, combined with that first, and several more experiences since, have led me to pursue a career in computer and software engineering.  I look forward to continuing to develop my skills and knowledge in the field and hope to positively impact the world through what I create.
 
-###### Here's a bonus: 
-If you made it this far, you might be interested in this desmos graph I created around the same time the events discussed in this essay took place.  So have fun, and enjoy!
+#### Bonus: 
+If you made it this far, you might be interested in this desmos graph I created around the same time the events discussed in this essay took place.
 
 [Desmos 4-term Spirograph](https://www.desmos.com/calculator/gncahk4kea)
+
+#### Another Bonus:
+Here's a simplified applet version of the desmos graph above:
+{% include parametricGraph.html %}
+

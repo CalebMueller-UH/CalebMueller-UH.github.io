@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <title>Parametric Graph</title>
+    <style>
+        body {
+            background-color: #9c4d00;
+        }
+
+        #graph {
+            margin: 0 auto;
+            display: block;
+            width: 450px;
+            height: 450px;
+            background-color: #1d1d1d;
+        }
+
+        #equation {
+            color: white;
+            text-align: center;
+        }
+
+        #indicator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #controls {
+            color: white;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #controls label,
+        #indicator span {
+            margin-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="graph"></canvas>
+    <div id="equation">x(t) = cos(at) + cos(bt) + cos(ct) + cos(dt)<br>y(t) = sin(at) +
+        sin(bt) + sin(ct) + sin(dt) </div>
+    <div id="parent" style="display: flex; justify-content: space-between;">
+        <div id="indicator" style="display: flex; flex-direction: column; align-items: center;">
+            <span>a: <span id="a-value"></span></span>
+            <span>b: <span id="b-value"></span></span>
+            <span>c: <span id="c-value"></span></span>
+            <span>d: <span id="d-value"></span></span>
+        </div>
+        <div id="controls" style="display: flex; flex-direction: column; align-items: center;">
+            <label for="a">a:</label>
+            <input type="range" id="a" min="-16" max="16" value="5" step="1.0" oninput="draw()"> <label
+                for="b">b:</label>
+            <input type="range" id="b" min="-16" max="16" value="1" step="1.0" oninput="draw()"> <label
+                for="c">c:</label>
+            <input type="range" id="c" min="-16" max="16" value="1" step="1.0" oninput="draw()"> <label
+                for="d">d:</label>
+            <input type="range" id="d" min="-16" max="16" value="-11" step="1.0" oninput="draw()">
+        </div>
+    </div>
+
+    <script>
+        const graph = document.getElementById("graph");
+        const ctx = graph.getContext("2d");
+        const controls = {
+            a: document.getElementById("a"),
+            b: document.getElementById("b"),
+            c: document.getElementById("c"),
+            d: document.getElementById("d"),
+        };
+        const aValue = document.getElementById("a-value");
+        const bValue = document.getElementById("b-value");
+        const cValue = document.getElementById("c-value");
+        const dValue = document.getElementById("d-value");
+        graph.width = window.innerWidth;
+        graph.height = window.innerHeight;
+        function draw() {
+            graph.width = window.innerWidth;
+            graph.height = window.innerHeight;
+            ctx.clearRect(0, 0, graph.width, graph.height);
+            ctx.beginPath();
+            ctx.strokeStyle = "green";
+            ctx.lineWidth = 4; // or any other value greater than 1
+            for (let t = 0; t <= 2 * Math.PI; t += 0.01) {
+                const x =
+                    Math.cos(controls.a.value * t) +
+                    Math.cos(controls.b.value * t) +
+                    Math.cos(controls.c.value * t) +
+                    Math.cos(controls.d.value * t);
+                const y =
+                    Math.sin(controls.a.value * t) +
+                    Math.sin(controls.b.value * t) +
+                    Math.sin(controls.c.value * t) +
+                    Math.sin(controls.d.value * t);
+                if (t === 0) {
+                    ctx.moveTo(graph.width / 2 + x * 50, graph.height / 2 - y * 50);
+                } else {
+                    ctx.lineTo(graph.width / 2 + x * 50, graph.height / 2 - y * 50);
+                }
+                aValue.innerHTML = controls.a.value;
+                bValue.innerHTML = controls.b.value;
+                cValue.innerHTML = controls.c.value;
+                dValue.innerHTML = controls.d.value;
+            }
+            ctx.stroke();
+            aValue.innerHTML = controls.a.value.toFixed(1);
+            bValue.innerHTML = controls.b.value.toFixed(1);
+            cValue.innerHTML = controls.c.value.toFixed(1);
+            dValue.innerHTML = controls.d.value.toFixed(1);
+        }
+        draw();
+
+    </script>
+</body>
+
+</html>
