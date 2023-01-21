@@ -17,7 +17,7 @@
     --bs-font-sans-serif: "Open Sans", sans-serif;
     --bs-font-sans-serif-color: var(--tf-offWhite1);
     --bs-link-color: var(--tf-linkBlue);
-    --tf-pill-bg: var(--tf-grey3);
+    --tf-pill-bg: var(--tf-grey2);
     --tf-icon-fill: var(--tf-offWhite1);
     --tf-page-bg-color: var(--tf-bgBlack1);
     --tf-footer-bg-color: var(--tf-grey2);
@@ -29,14 +29,11 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     font-family: Rubik;
     color: var(--tf-offWhite1);
-}
-
-h5 {
-    font-family: Rubik;
-    color: #000000;
 }
 
 /* Main Page Text Stylization */
@@ -59,16 +56,38 @@ a {
     text-decoration: none;
 }
 
+/* Add class to format the text inside the cards */
+.card {
+    background-color: var(--tf-grey3);
+}
+
+/* Add class to format the title text of the cards */
+.card-title {
+    color: var(--tf-offWhite1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500
+}
+
+.card-date {
+    color: var(--tf-offWhite1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400
+}
+
+/* Add class to format the text inside the cards */
+.card-text {
+    font-family: var(--bs-font-sans-serif);
+    color: var(--tf-grey1);
+    font-weight: 500
+}
+
 /* Simplify the styling of the bottom of Essay cards. */
 .card-footer {
     background-color: var(--tf-grey1);
     border-top: none;
 }
 
-/* Add class to format the text inside the cards */
-.card-text {
-    color: var(--tf-bgBlack1);
-}
+
 
 /* Add class to format the buttons */
 .btn {
