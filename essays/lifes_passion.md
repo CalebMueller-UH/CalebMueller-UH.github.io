@@ -12,7 +12,7 @@ labels:
 
 <img width="350px" class="rounded float-start pe-4" src="../img/essayPics/lissajous.jpeg">
 
-## Too Technical for a Knuckle-Dragging Ground Pounder?
+## From Ground Pounder to Software Engineer.
 My interest in software engineering stems from a love of creating and building things.  After leaving the Army in 2016, I searched for a career I would be satisfied with for the rest of my life.  I had always been fascinated by technology but felt that I lacked the skills and knowledge to pursue such a technical career.  It was in my second year of a biology degree that I purchased an Arduino kit as a hobby interest and discovered my passion for electronics and coding.  I quickly became engrossed in how the code I wrote could control the behavior of servos, motors, and sensors.  Within a month of buying that kit, I had already worked through the little book of beginner projects and was looking to build something from scratch.
 
 That first project was a laser spirograph.  I had seen YouTube videos about how mounting small mirrors to the spindles of DC motors and bouncing a laser beam consecutively off multiple spinning mirrors could create these incredible Lissajous figures.  What set my imagination on fire was that the spinning of the mirrors, messily hot-glued and unbalanced to the shafts of those motors, oscillated and produced an audible vibration.
