@@ -7,13 +7,13 @@
 :root {
     --tf-debugRed: #ff0000;
     --tf-offWhite1: #ebebeb;
-    --tf-grey1: #adadad;
-    --tf-grey2: #737373;
-    --tf-grey3: #464545;
+    --tf-grey1: #7face0;
+    --tf-grey2: #6b6e63;
+    --tf-grey3: #373744;
     --tf-slate1: #3b5889;
     --tf-linkBlue: #003cff;
     --tf-bgBlack1: #1d1d1d;
-    --tf-bgBlack2: #414040;
+    --tf-bgBlack2: #464550;
     --bs-font-sans-serif: "Open Sans", sans-serif;
     --bs-font-sans-serif-color: var(--tf-offWhite1);
     --bs-link-color: var(--tf-linkBlue);
@@ -63,11 +63,12 @@ a {
 
 /* Add class to format the title text of the cards */
 .card-title {
-    color: var(--tf-offWhite1);
     font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 500
+    color: var(--tf-offWhite1);
+    font-weight: 600
 }
 
+/* Add class to control date appearance within cards */
 .card-date {
     color: var(--tf-offWhite1);
     font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -77,17 +78,15 @@ a {
 /* Add class to format the text inside the cards */
 .card-text {
     font-family: var(--bs-font-sans-serif);
-    color: var(--tf-grey1);
-    font-weight: 500
+    color: var(--tf-offWhite1);
+    font-weight: 400
 }
 
 /* Simplify the styling of the bottom of Essay cards. */
 .card-footer {
-    background-color: var(--tf-grey1);
+    background-color: var(--tf-grey2);
     border-top: none;
 }
-
-
 
 /* Add class to format the buttons */
 .btn {
@@ -103,6 +102,8 @@ a {
 
 .essay-page {
     background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+    color: var(--tf-offWhite1);
+    font-weight: 400
 }
 
 .essay-page h1,
@@ -125,6 +126,8 @@ h6 {
 
 .project-page {
     background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+    color: var(--tf-offWhite1);
+    font-weight: 400
 }
 
 .project-page .highlight {
