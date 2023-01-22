@@ -20,7 +20,8 @@
 
         #controls {
             font-family: Rubik;
-            color: white;
+            font-size: large;
+            color: #0f0;
             display: flex;
             flex-direction: column;
             align-items: stretch;
@@ -28,6 +29,25 @@
 
         #controls span {
             margin-right: 10px;
+        }
+
+        #controls input[type=range] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            background: #315c34;
+            height: 8px;
+            border-radius: 10px;
+        }
+
+        #controls input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #9c4d00;
+            cursor: pointer;
+            border-radius: 50%;
         }
     </style>
 </head>
