@@ -35,5 +35,5 @@ If you made it this far, you might be interested in this desmos graph I created 
 #### Another Bonus:
 Here's a simplified applet version of the desmos graph above:
 
-{% include parametricGraph.html %}
+{% include paraGraph.html %}
 
