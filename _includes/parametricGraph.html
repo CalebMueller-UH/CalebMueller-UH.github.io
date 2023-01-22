@@ -27,16 +27,25 @@
             align-items: stretch;
         }
 
+        #controls div {
+            display: flex;
+            align-items: center;
+        }
+
+        #controls label {
+            margin-right: 10px;
+        }
+
         #controls span {
             margin-right: 10px;
         }
 
         #controls input[type=range] {
+            width: 500px;
+            height: 8px;
             -webkit-appearance: none;
             appearance: none;
-            width: 500px;
             background: #315c34;
-            height: 8px;
             border-radius: 10px;
         }
 
@@ -94,6 +103,11 @@
         const bValue = document.getElementById("b-value");
         const cValue = document.getElementById("c-value");
         const dValue = document.getElementById("d-value");
+        document.getElementById("a-value").innerHTML = controls.a.value;
+        document.getElementById("b-value").innerHTML = controls.b.value;
+        document.getElementById("c-value").innerHTML = controls.c.value;
+        document.getElementById("d-value").innerHTML = controls.d.value;
+
         graph.width = window.innerWidth;
         graph.height = window.innerHeight;
         function draw() {
