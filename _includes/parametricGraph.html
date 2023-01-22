@@ -3,28 +3,65 @@
 <head>
     <title>Parametric Graph</title>
     <style>
+        #container {
+            display: flex;
+            align-items: center;
+        }
+
+        @media screen and(orientation: portrait) {
+            #container {
+                flex-direction: column;
+            }
+
+            #equation-controls {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            #container {
+                flex-direction: row;
+            }
+
+            #equation-controls {
+                margin-left: 2vw;
+            }
+        }
+
         #graph {
-            width: 500px;
-            height: 500px;
-            margin: 0 auto;
-            display: block;
+            width: 100%;
+            height: 100%;
+            max-width: 550px;
+            max-height: 550px;
+            margin: 0;
             background-color: #1d1d1d;
             border: 2px solid #9c4d00;
         }
 
+        @media screen and (min-width: 600px) {
+            #graph {
+                width: 40vw;
+                height: 40vh;
+            }
+        }
+
+        #equation-controls {
+            margin-left: 2vw;
+            display: flex;
+            flex-direction: column;
+        }
+
         #equation {
             font-family: Rubik;
-            font-size: 20px;
+            font-size: 1.35vw;
             color: white;
-            text-align: center;
+            text-align: left;
         }
 
         #controls {
             font-family: Rubik;
             font-size: 16px;
             color: white;
-            display: flex;
-            flex-direction: column;
             align-items: center;
         }
 
@@ -36,10 +73,10 @@
         }
 
         #controls input[type=range] {
-            width: 400px;
-            height: 10px;
             -webkit-appearance: none;
             appearance: none;
+            width: 80%;
+            height: 10px;
             background: #315c34;
             border-radius: 10px;
             align-items: center;
@@ -51,34 +88,41 @@
             width: 20px;
             height: 20px;
             background: #9c4d00;
-            cursor: pointer;
             border-radius: 50%;
+            cursor: pointer;
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <canvas id="graph"></canvas>
-    <div id="equation">x(t) = cos(<span id="aVal"></span>t) +
-        cos(<span id="bVal"></span>t) +
-        cos(<span id="cVal"></span>t) +
-        cos(<span id="dVal"></span>t)<br>
-        y(t) = sin(<span id="aVal"></span>t) +
-        sin(<span id="bVal"></span>t) +
-        sin(<span id="cVal"></span>t) +
-        sin(<span id="dVal"></span>t) </div>
-    <br>
-    <div id="controls">
-        <div><label for="a">α</label><input type="range" id="a" min="-16" max="16" value="5" step="1.0"
-                oninput="draw()"></div>
-        <div><label for="b">β</label><input type="range" id="b" min="-16" max="16" value="1" step="1.0"
-                oninput="draw()"></div>
-        <div><label for="c">γ</label><input type="range" id="c" min="-16" max="16" value="1" step="1.0"
-                oninput="updateVal('cVal', this.value); draw()"></div>
-        <div><label for="d">δ</label><input type="range" id="d" min="-16" max="16" value="-11" step="1.0"
-                oninput="updateVal('dVal', this.value); draw()"></div>
+    <div id="container">
+        <canvas id="graph"></canvas>
+        <div id="equation-controls">
+            <div id="equation">
+                x(t) = cos(<span id="aVal"></span>t) +
+                cos(<span id="bVal"></span>t) +
+                cos(<span id="cVal"></span>t) +
+                cos(<span id="dVal"></span>t)<br><br>
+                y(t) = sin(<span id="aVal"></span>t) +
+                sin(<span id="bVal"></span>t) +
+                sin(<span id="cVal"></span>t) +
+                sin(<span id="dVal"></span>t)
+                <br><br>
+            </div>
+            <div id="controls">
+                <div><label for="a">α</label><input type="range" id="a" min="-16" max="16" value="5" step="1.0"
+                        oninput="draw()"></div>
+                <div><label for="b">β</label><input type="range" id="b" min="-16" max="16" value="1" step="1.0"
+                        oninput="draw()"></div>
+                <div><label for="c">γ</label><input type="range" id="c" min="-16" max="16" value="1" step="1.0"
+                        oninput="updateVal('cVal', this.value); draw()"></div>
+                <div><label for="d">δ</label><input type="range" id="d" min="-16" max="16" value="-11" step="1.0"
+                        oninput="updateVal('dVal', this.value); draw()"></div>
+            </div>
+        </div>
     </div>
+    <br>
     <script>
         const graph = document.getElementById("graph");
         const ctx = graph.getContext("2d");
