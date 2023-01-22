@@ -16,32 +16,21 @@
         }
 
         #equation {
+            font-family: Rubik;
             color: white;
             text-align: center;
         }
 
-        #indicator {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
         #controls {
+            font-family: Rubik;
             color: white;
-            justify-content: center;
             display: flex;
             flex-direction: column;
             align-items: stretch;
         }
 
-        .parent {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #controls label,
-        #indicator span {
-            margin-right: 0px;
+        #controls span {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -49,25 +38,30 @@
 <body>
     <canvas id="graph"></canvas>
     <div id="equation">x(t) = cos(at) + cos(bt) + cos(ct) + cos(dt)<br>y(t) = sin(at) +
-        sin(bt) + sin(ct) + sin(dt) </div>
-    <div id="parent" style="display: flex; justify-content: space-between;">
-        <div id="indicator" style="display: flex; flex-direction: column; align-items: center;">
-            <span>a: <span id="a-value"></span></span>
-            <span>b: <span id="b-value"></span></span>
-            <span>c: <span id="c-value"></span></span>
-            <span>d: <span id="d-value"></span></span>
-        </div>
-        <div id="controls" style="display: flex; flex-direction: column; align-items: center;">
+        sin(bt) + sin(ct) + sin(dt) </div><br>
+    <div id="controls" style="display: flex; flex-direction: column; align-items: center;">
+        <div>
             <label for="a">a:</label>
-            <input type="range" id="a" min="-16" max="16" value="5" step="1.0" oninput="draw()"> <label
-                for="b">b:</label>
-            <input type="range" id="b" min="-16" max="16" value="1" step="1.0" oninput="draw()"> <label
-                for="c">c:</label>
-            <input type="range" id="c" min="-16" max="16" value="1" step="1.0" oninput="draw()"> <label
-                for="d">d:</label>
+            <span id="a-value"></span>
+            <input type="range" id="a" min="-16" max="16" value="5" step="1.0" oninput="draw()">
+        </div>
+        <div>
+            <label for="b">b:</label>
+            <span id="b-value"></span>
+            <input type="range" id="b" min="-16" max="16" value="1" step="1.0" oninput="draw()">
+        </div>
+        <div>
+            <label for="c">c:</label>
+            <span id="c-value"></span>
+            <input type="range" id="c" min="-16" max="16" value="1" step="1.0" oninput="draw()">
+        </div>
+        <div>
+            <label for="d">d:</label>
+            <span id="d-value"></span>
             <input type="range" id="d" min="-16" max="16" value="-11" step="1.0" oninput="draw()">
         </div>
     </div>
+
 
     <script>
         const graph = document.getElementById("graph");
@@ -113,10 +107,10 @@
                 dValue.innerHTML = controls.d.value;
             }
             ctx.stroke();
-            aValue.innerHTML = controls.a.value.toFixed(1);
-            bValue.innerHTML = controls.b.value.toFixed(1);
-            cValue.innerHTML = controls.c.value.toFixed(1);
-            dValue.innerHTML = controls.d.value.toFixed(1);
+            aValue.innerHTML = controls.a.value;
+            bValue.innerHTML = controls.b.value;
+            cValue.innerHTML = controls.c.value;
+            dValue.innerHTML = controls.d.value;
         }
         draw();
 
