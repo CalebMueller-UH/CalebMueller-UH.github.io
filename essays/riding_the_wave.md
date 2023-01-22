@@ -11,7 +11,6 @@ labels:
 
 <img width="400" class="float-end pe-4" src="/img/essayPics/dusky_wave.jpg" alt="A Gorgeous Wave at Dusk">
 
-
 # Waves of Opportunity
 As a computer and electrical engineer, ongoing education and skill development are essential for my professional growth and success.  The field is constantly evolving, and new technologies and advancements are emerging regularly.  Therefore, it is crucial to continuously update my knowledge and skills to stay current and relevant, much like catching the wave of opportunity in a field where the only constant is the tides of change.   This ongoing process of acquiring new knowledge, skills, and competencies throughout my life is what I refer to as lifelong learning.
 
@@ -31,7 +30,7 @@ As technology advances, the amount of information available can be overwhelming.
 
 This is where lifelong learning comes in.  We arm ourselves with the tools we need to stay current and relevant in the field by continuously updating our skills and knowledge.  It's not necessary to master every tool or technology, but having a wide variety of tools in our toolbox allows us to make informed decisions and tackle any challenge that comes our way.  Knowledge truly is power, and lifelong learning is the key to unlocking that power and staying ahead in computer and electrical engineering.
 
-## Stay Afloat
+## Staying Afloat
 In the constantly evolving field of computer and electrical engineering, staying afloat in the job market requires staying current with new technologies and advancements.  By continuously updating my skills and knowledge, I can better stay informed about new job opportunities and be more competitive when applying for new roles.  Additionally, keeping my skills and knowledge up-to-date increases the likelihood of being considered for promotions and new opportunities within my current organization.
 
 Lifelong learning is beneficial not only for career advancement but also for personal and professional development.  By continuously updating my skills and knowledge, I can take on new challenges and responsibilities, develop new areas of expertise, and ultimately lead a more fulfilling and rewarding career.
