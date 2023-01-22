@@ -3,7 +3,7 @@
 <head>
     <title>Parametric Graph</title>
     <style>
-        /* Default layout for screens larger than 600px */
+        /*  Start of Default Layout for Screens Larger than 600px */
         #container {
             display: flex;
             align-items: center;
@@ -26,43 +26,11 @@
             flex-direction: column;
         }
 
-        /* Layout for portrait orientation on screens smaller than 600px */
-        @media screen and (max-width: 600px) and (orientation: portrait) {
-            #container {
-                flex-direction: column;
-            }
-
-            #graph {
-                width: 100%;
-                height: 60%;
-            }
-
-            #equation-controls {
-                margin-left: 0;
-            }
-        }
-
-        /* Layout for landscape orientation on screens smaller than 600px */
-        @media screen and (max-width: 600px) and (orientation: landscape) {
-            #container {
-                flex-direction: row;
-            }
-
-            #graph {
-                width: 60%;
-                height: 100%;
-            }
-
-            #equation-controls {
-                margin-left: 2vw;
-            }
-        }
-
         #equation {
             font-family: Rubik;
-            font-size: 1.35vw;
+            font-size: 16px;
             color: white;
-            text-align: left;
+            text-align: center;
         }
 
         #controls {
@@ -73,7 +41,7 @@
         }
 
         #controls label {
-            margin-right: 5px;
+            margin-right: 8px;
             text-align: center;
             font-family: Rubik;
             font-size: 20px;
@@ -82,22 +50,155 @@
         #controls input[type=range] {
             -webkit-appearance: none;
             appearance: none;
-            width: 80%;
-            height: 1.75vh;
+            width: 90%;
+            height: 15px;
+            border-radius: 7.5px;
             background: #315c34;
-            border-radius: 10px;
             align-items: center;
         }
 
         #controls input[type=range]::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 2vh;
-            height: 2vh;
-            background: #9c4d00;
+            width: 18px;
+            height: 18px;
             border-radius: 50%;
+            background: #9c4d00;
             cursor: pointer;
         }
+
+        /*  End of Default Layout for Screens Larger than 600px */
+
+
+        /* Start of Layout for Portrait Orientation on Screens Smaller than 600px */
+        @media screen and (max-width: 600px) and (orientation: portrait) {
+            #container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            #graph {
+                width: 88vw;
+                height: 88vw;
+            }
+
+            #equation-controls {
+                width: 88vw;
+                height: 88vw;
+                margin-left: 0;
+            }
+
+            #equation {
+                font-family: Rubik;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+            }
+
+            #controls {
+                font-family: Rubik;
+                font-size: 16px;
+                color: white;
+                align-items: center;
+            }
+
+            #controls label {
+                margin-right: 8px;
+                text-align: center;
+                font-family: Rubik;
+                font-size: 20px;
+            }
+
+            #controls input[type=range] {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 90%;
+                height: 15px;
+                border-radius: 7.5px;
+                background: #315c34;
+                align-items: center;
+            }
+
+            #controls input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background: #9c4d00;
+                cursor: pointer;
+            }
+        }
+
+        /* End of Layout for Portrait Orientation on Screens Smaller than 600px */
+
+
+        /* Start of Layout for Landscape Orientation on Screens Smaller than 600px */
+        @media screen and (max-height: 600px) and (orientation: landscape) {
+            #container {
+                width: 87vw;
+                height: 88vh;
+                flex-direction: row-reverse;
+            }
+
+            #graph {
+                width: 45vw;
+                height: 45vw;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #equation-controls {
+                width: 90%;
+                height: 90%;
+                margin-left: 0;
+                justify-content: center;
+            }
+
+            #equation {
+                font-family: Rubik;
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                margin-right: 10px;
+            }
+
+            #controls {
+                align-items: center;
+            }
+
+            #controls label {
+                margin-right: 8px;
+                text-align: center;
+                color: white;
+                font-family: Rubik;
+                font-size: 20px;
+            }
+
+            #controls input[type=range] {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 90%;
+                height: 15px;
+                border-radius: 7.5px;
+                background: #315c34;
+                align-items: center;
+            }
+
+            #controls input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background: #9c4d00;
+                cursor: pointer;
+            }
+        }
+
+        /* End of Layout for Landscape Orientation on Screens Smaller than 600px */
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
