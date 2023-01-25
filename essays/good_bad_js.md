@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Javascript: The Good, The Bad, and The Future"
+title: "The Good, The Bad, and JavaScript"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-15
 published: true
@@ -12,7 +12,6 @@ labels:
 
 <img width="350px" class="rounded float-start pe-4" src="/img/essayPics/clint_eastwood_tgtbtu.jpg">
 
-# What is JavaScript?
 JavaScript (JS) is a widely-used programming language that has found applications in various areas of software development, such as web development, desktop, mobile app development, server-side programming, and Internet of Things (IoT) devices.  As a new programmer, my initial experience with JavaScript has been positive.  Before taking a software engineering course that deals primarily with JavaScript, I had limited exposure to the language through working with NodeRed.  The syntax is similar to C and C++, and it was easy to pick up the basics quickly, but JavaScript is very different because it's a dynamic and weakly typed language.  This can yield more flexibility regarding functions that deal with multiple data types without the need for overloading-- for better or worse.  What's more, functions in JavaScript are first-class objects, meaning functions can contain properties and methods and be passed around the same as any other object can be.
 
 There's much to be excited about over JavaScript, but it isn't all rainbows and sunshine.  Some severe issues arise from its use, as will be discussed.  This essay aims to express my thoughts on JavaScript thus far, including its strengths and limitations, my personal experience with athletic software engineering, and the practice of daily coding, referred to as WODs.

@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Riding the Wave: The Role of Lifelong Learning in Computer and Electrical Engineering"
+title: "Waves of Opportunity"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-21
 published: false
@@ -11,7 +11,6 @@ labels:
 
 <img width="400" class="float-end pe-4" src="/img/essayPics/dusky_wave.jpg" alt="A Gorgeous Wave at Dusk">
 
-# Waves of Opportunity
 As a computer and electrical engineer, ongoing education and skill development are essential for my professional growth and success.  The field is constantly evolving, and new technologies and advancements are emerging regularly.  Therefore, it is crucial to continuously update my knowledge and skills to stay current and relevant, much like catching the wave of opportunity in a field where the only constant is the tides of change.   This ongoing process of acquiring new knowledge, skills, and competencies throughout my life is what I refer to as lifelong learning.
 
 ## Continuing the Learning Journey: Different Paths for Staying Current

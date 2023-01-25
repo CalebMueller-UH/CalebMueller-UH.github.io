@@ -1,14 +1,13 @@
 ---
 layout: essay
 type: essay
-title: "The Cathedral and the Mound: A Look at Monolithic and Modular Design"
+title: "The Cathedral and the Mound: Monolithic and Modular Design"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-25
 published: true
 labels:
   - Monolithic vs Modular Design
 ---
-## Introduction
 
 In his book "The Selfish Gene," Richard Dawkins presents a captivating analogy between the construction of a termite mound and the renowned Spanish cathedral, Sagrada Familia.  He notes that while termites, through collective and decentralized efforts, could construct a complex and intricate structure closely resembling the cathedral, the latter was designed and built by a central authority using a top-down approach.
 
@@ -30,9 +29,9 @@ The advantages of monolithic design include simplicity and ease of integration, 
 ## Modular Design
 On the other hand, a modular design refers to breaking down a system into smaller, self-contained modules or components that can be independently designed, tested, and replaced as needed.  This approach is characterized by a decentralized and bottom-up design process, with clear separation and distinct boundaries between different subsystems or functionalities.  Unlike a monolithic control scheme, a modular design is characterized by a decentralized approach, where no central agent controls the peripheral devices.  Instead, each module or component is self-contained and can function independently.  Furthermore, the communication and coordination between modules are achieved through interfaces rather than a central control mechanism.
 
-A smartphone, such as Google Project Ara, is an example of a modular design.  This smartphone allows users to independently replace and upgrade specific components, such as the camera or battery, without replacing the entire device.
-
 <img width="400" class="float-end pe-4" src="/img/essayPics/Project-Ara-pieces-1.png" alt="Modular Example: Google Project Ara">
+
+A smartphone, such as Google Project Ara, is an example of a modular design.  This smartphone allows users to independently replace and upgrade specific components, such as the camera or battery, without replacing the entire device.
 
 A modular system allows for a more flexible and scalable system, as individual modules can be easily replaced or upgraded without disrupting the entire system.  Additionally, modular design allows for the easy addition of new functionalities and components, making the system more adaptable to changing needs. 
 
