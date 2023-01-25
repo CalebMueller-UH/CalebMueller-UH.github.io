@@ -38,7 +38,7 @@ A modular system allows for a more flexible and scalable system, as individual m
 However, modular designs have drawbacks such as complexity, increased cost, and compatibility issues.  Because the system is composed of multiple independent modules, it can be more challenging to understand and maintain, and compatibility issues may arise between different modules.  In the case of modular smartphones, the cost of purchasing multiple modules and the complexity of assembling them could be a drawback.
 
 ## Which is better?
-Monolithic and modular design are two opposing paradigms, each with its advantages and drawbacks.  A Monolithic designs' advantage is its' simplicity, but this is offset by being inflexible and being difficult to scale.  Modular designs, on the other hand do have more flexibility and scalability, but can be complex, costly, and prone to compatibility issues.
+Monolithic and modular design are two opposing paradigms, each with its advantages and drawbacks.  A Monolithic designs' advantage is its' simplicity, but suffers from being inflexible and difficult to scale.  Modular designs, on the other hand do have more flexibility and scalability, but can be complex, costly, and prone to compatibility issues.
 
 <img width="600" class="float-start pe-4" src="/img/essayPics/The-Curiosity-Rover.png" alt="Complex System Benefits from Modularity">
 
