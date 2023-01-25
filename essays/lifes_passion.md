@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Life's Passion is Often Hidden In Plain Sight"
+title: "Life's Passion: Often Hidden In Plain Sight"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-17
 published: true
