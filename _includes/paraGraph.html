@@ -271,6 +271,7 @@ Written by Caleb Mueller
             const dValueSpans = document.querySelectorAll("#dVal"); dValueSpans.forEach(span => { span.innerHTML = d_draw; });
 
             for (let t = 0; t <= 2 * Math.PI; t += 0.01) {
+                const scaleBy = 110;
                 const x =
                     Math.cos(a_draw * t) +
                     Math.cos(b_draw * t) +
@@ -282,9 +283,9 @@ Written by Caleb Mueller
                     Math.sin(c_draw * t) +
                     Math.sin(d_draw * t);
                 if (t === 0) {
-                    ctx.moveTo(graph.width / 2 + x * 110, graph.height / 2 - y * 110);
+                    ctx.moveTo(graph.width / 2 + x * scaleBy, graph.height / 2 - y * scaleBy);
                 } else {
-                    ctx.lineTo(graph.width / 2 + x * 110, graph.height / 2 - y * 110);
+                    ctx.lineTo(graph.width / 2 + x * scaleBy, graph.height / 2 - y * scaleBy);
                 }
             }
             ctx.stroke();
