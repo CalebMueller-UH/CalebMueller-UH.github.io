@@ -4,7 +4,7 @@ type: essay
 title: "Riding the Wave: The Role of Lifelong Learning in Computer and Electrical Engineering"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-21
-published: true
+published: false
 labels:
   - Lifelong Learning
 ---
