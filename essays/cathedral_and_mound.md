@@ -21,12 +21,12 @@ By comparing and contrasting these two examples, it becomes clear that monolithi
   
 ## Monolithic Design
 Monolithic design refers to a design paradigm in which all of the components and functionality of a system are integrated into a single unit or module, with little-to-no separation or distinct boundaries between different subsystems or functionalities.  This approach is characterized by a centralized, top-down process where a core element controls and coordinates the operation of the system's peripheral components.
-s
-<img width="350" class="float-start pe-4" src="/img/essayPics/raspberryPi.jpeg" alt="Monolithic Example: Raspberry Pi 4">
+
+<img width="400" class="float-start pe-4" src="/img/essayPics/raspberryPi.jpeg" alt="Monolithic Example: Raspberry Pi 4">
 
 An example of a monolithic design is a single-board computer such as the Raspberry Pi.  These types of computers contain all the components needed to operate, such as a processor, memory, and I/O interfaces, on a single circuit board.
 
-The advantages of monolithic design include simplicity and ease of integration, as all the components are included in one unit.  However, a monolithic design also has drawbacks, such as inflexibility and lack of scalability.  In addition, because the system is entirely dependent on the functionality of that single unit, should a component need repair or require upgrading, it can be challenging to do so without redesigning the entire system.  In the case of single-board computers, it may require changing the entire board to upgrade or add components or functionalities.
+The advantages of monolithic design include simplicity and ease of integration, as all the components are included in one unit.  However, a monolithic design also has drawbacks, such as inflexibility and lack of scalability.  In addition, because the system is entirely dependent on that single unit, should a component need repair or require upgrading, it can be challenging to do so without redesigning the entire system.  In the case of single-board computers, it may require changing the entire board to upgrade or add components or functionalities.
 
 ## Modular Design
 On the other hand, a modular design refers to breaking up a system into smaller, self-contained modules or components that can be independently designed, tested, and replaced as needed.  This approach is characterized by a decentralized and bottom-up process, with clear separation and distinct boundaries between different subsystems or functionalities.  Unlike a monolithic control scheme, a modular design uses a decentralized approach, where no central agent controls the peripheral devices.  Instead, each module or component is self-contained and can function independently.  Furthermore, the communication and coordination between modules are achieved through interfaces rather than a central control mechanism.
