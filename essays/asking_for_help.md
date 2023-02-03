@@ -13,7 +13,6 @@ labels:
 Isaac Newton's famous quote, "If I have seen a little further, it is by standing on the shoulders of Giants," highlights the significance of building upon the knowledge of those who have come before us, as their collective contributions have propelled humanity to new heights, shaping the world we know today.  However, with the sheer amount of information available, navigating and accessing the technical knowledge we need has become a daunting task.
 
 <img width="500" class="float-end pe-4" src="/img/essayPics/ironGiant.jpg" alt="Standing on the shoulders of giants">
-
 Enter technical forums like Stack Overflow, Quora, and Github.  These online communities serve as a hub for experts and enthusiasts to collaborate and share their knowledge, making it easier for individuals to access the information they seek.  By tapping into the collective wisdom of these experts, individuals can better understand complex concepts, troubleshoot problems, and develop new ideas.  However, the effectiveness of these forums relies heavily on the quality of the questions being asked.  Asking well-constructed questions provides the necessary information for a good answer and motivates those with relevant expertise to contribute.
 
 In the essay ["How to ask questions the smart way"](https://www.catb.org/esr/faqs/smart-questions.html), Eric Raymond provides valuable insights and guidelines for asking effective questions.  This advice is not limited to a specific field or discipline and is universally applicable.
