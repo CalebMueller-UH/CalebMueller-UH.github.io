@@ -10,36 +10,30 @@ labels:
   - Dumb Questions
 ---
 
-Isaac Newton's famous quote, "If I have seen a little further, it is by standing on the shoulders of Giants," highlights the importance of building upon the knowledge of those who have come before us. The collective contributions of experts in their field have propelled humanity to new heights, expanding the realm of possibility and shaping the world we know today. However, with the proliferation of so much information, technical knowledge has grown unprecedentedly, making it increasingly more work to navigate and access the information we need.
+Isaac Newton's famous quote, "If I have seen a little further, it is by standing on the shoulders of Giants," highlights the significance of building upon the knowledge of those who have come before us, as their collective contributions have propelled humanity to new heights, shaping the world we know today.  However, with the sheer amount of information available, navigating and accessing the technical knowledge we need has become a daunting task.
 
 <img width="500" class="float-end pe-4" src="/img/essayPics/ironGiant.jpg" alt="Standing on the shoulders of giants">
 
-This is where technical forums like Stack Overflow, Quora, and Github have proven invaluable assets. These online communities serve as a platform for experts and enthusiasts to share their knowledge and collaborate, making it easier for people to access the information they need. By leveraging these experts' collective wisdom, individuals can better understand complex concepts, troubleshoot problems, and develop new ideas.However, these forums' effectiveness depends heavily on how a question is asked. Asking good questions leads to better answers by not only providing sufficient accompanying information required to provide a good answer but also by motivating those with the relevant knowledge to do so.  
+Enter technical forums like Stack Overflow, Quora, and Github.  These online communities serve as a hub for experts and enthusiasts to collaborate and share their knowledge, making it easier for individuals to access the information they seek.  By tapping into the collective wisdom of these experts, individuals can better understand complex concepts, troubleshoot problems, and develop new ideas.  However, the effectiveness of these forums relies heavily on the quality of the questions being asked.  Asking well-constructed questions provides the necessary information for a good answer and motivates those with relevant expertise to contribute.
 
-In the essay ["How to ask questions the smart way"](https://www.catb.org/esr/faqs/smart-questions.html), Eric Raymond lays out several considerations and guidelines for asking good questions, and this advice is honestly universal.  
+In the essay ["How to ask questions the smart way"](https://www.catb.org/esr/faqs/smart-questions.html), Eric Raymond provides valuable insights and guidelines for asking effective questions.  This advice is not limited to a specific field or discipline and is universally applicable.
 
 ## What Makes a Good Question?
-As Raymond points out, a well-crafted question communicates the problem clearly and shows that the person asking the question has made an effort to research and understand the issue. Doing so saves time for the person answering the question and demonstrates that the person is genuinely interested in learning and solving the problem.  
+As Eric Raymond suggests, a well-crafted question communicates the problem.  In addition, it demonstrates the asker's effort to research and understand the issue, which saves time for the person answering the question and shows a genuine interest in learning and solving the problem.
 
-Here are a few things you might want to get right when posting to a technical community:
-- Knowing what it is you need help on
-- Doing your own research.  Maybe there's an article or blog post that discusses the very thing you need to know
-- Searching on the forum to see if someone else has already asked what it is you're about to ask
-- Getting a lay-of-the-land prior to posting to see how things operate
-- Choosing the correct forum for what you're asking, and ensuring your question is on-topic
-- Using descriptive titles that indicate what the question content is about
-- Including relevant tags to your post such as the programming language, environment, or set of tools.  Like a good title, this queues people with these skillsets towards your post
-- Showing respect for others' time by putting in a little effort to your question
-- Being concise and informative by carefully describing the question/bug/problem
-- Describing what you've already researched in trying to understand the problem  
-- Clearly stating the steps you've taken to troubleshoot the problem
-- Anticipating and pre-emptively answering any questions you suspect someone replying to your problem may ask
-- Giving background information on what hardware you're using or environment configurations that can help reproduce the problem 
-- Distilling the problem down to being as short and to the point as possible
+Here are some key points to keep in mind when posting to a technical community:
+- Clearly define the problem or question you need help with
+- Conduct your research, including searching the forum for similar questions
+- Choose the appropriate forum and ensure your question is on-topic
+- Use descriptive titles and relevant tags to attract the right experts to your post
+- Show respect for others' time by putting effort into your question
+- Be concise and informative, including details of your research and troubleshooting steps
+- Anticipate and answer any potential follow-up questions
+- Provide relevant background information, such as hardware or environment configurations
+- Keep the problem description as brief and to the point as possible.
 
 ## An Example of a Good Question
 [This question on Stack Overflow is an example of how to ask a good question.](https://stackoverflow.com/questions/51176779/unit-testing-with-esp-idf)
-
 ```
 Title: Unit testing with ESP-IDF:
 
@@ -62,21 +56,17 @@ I can see several approaches, but I don't know what is the intended way to add o
 - Should I copy the unit test app and add it to my projects?
 - Should I create a folder in my project and add a link to the unit test app?
 ```
-What makes this question so good:
-- The user wants to know how to implement unit testing within the ESP-IDF.  They correctly label the title of the question as such: "Unit testing with ESP-IDF." This captures the essence of what they're asking.  
-- Further, they include relevant tags to the topic nature of what they're asking.  The question includes the tags "unit-testing," "embedded," and "esp32."
-- They briefly introduce the question and provide some background as to what they're looking for.
-- They provide a link to a similar question, showing they've already searched for the answer, but indicate that the results don't quite answer what they need to know.
-- They describe their setup and relevant configurations that may be pertinent to an answer.
--  They give more context and background into what they've already researched and refine their question to clarify what they're asking. 
-- They're concise and organized about what information they're looking for and use bulleted lists to convey this information.
+The following elements make this question a well-crafted and effective one:
+- Relevant and descriptive title: "Unit testing with ESP-IDF" accurately captures the essence of the question.
+- Appropriate tags: The tags "unit-testing," "embedded," and "esp32" are relevant to the topic and help attract relevant experts to the post.
+- Brief introduction and background: The question includes a brief introduction and provides relevant background information to understand the problem better.
+- Evidence of research: The question includes a link to a similar question, showing that the asker has already conducted some research but still needs further assistance.
+- Relevant setup and configurations: The question provides information about the setup and relevant configurations that may be relevant to the answer.
+- Concise and organized: The question is concise and organized, including a bulleted list of information the asker is looking for.
+- Follow-up: The original poster followed up with the post after contacting the relevant company and linked to an example demonstrating the answer to the question.
 
-The original poster even follows up with the post after contacting the company who owns the relevant product, and linked to an example that demonstrates the answer to their original question.  Even though it took some time, a clear and concise answer to the original authors' question was eventually given.
-
-
-## There are no Dumb Questions
+## What Makes a Poor Question?
 [Here is an example of a poorly formed question](https://stackoverflow.com/questions/1919703/someone-please-help-me-with-this-web-content-display-problem-in-liferay-im-stuc)
-
 ```
 Title: Someone please help me with this Web Content Display problem in Liferay..im stuck !
 
@@ -85,11 +75,12 @@ Any way to make the web content appear maximized by default instead of minimized
 Please Help.  Thank You
 
 ```
+Contrasting with the earlier example, this type of question lacks several key elements that are needed to make it an effective one:
+- Inadequate title: The title does not accurately describe the question, making it difficult to understand the problem.
+- Poor grammar and organization: The question appears hastily written and lacks coherence.
+- Lack of effort: The question gives the impression that little effort was put into researching or troubleshooting the issue.
+- Missing research and troubleshooting details: There is no mention of what steps the asker took to research or troubleshoot the issue.
 
-Unlike the earlier example:
-- The title makes no mention of what the question is about
-- The grammar seems hastily thrown together
-- There's just an impression of little to no effort put into writing the question
-- There's no mention of what the poster did to attempt to research or troubleshoot the issue themselves
+The quality of a question can significantly impact the likelihood of receiving a helpful answer on technical forums such as Stack Overflow.  Therefore, asking well-crafted questions, following the principles outlined in "How to ask questions the smart way," such as having a clear and descriptive title, conducting research, and being concise and organized, can significantly improve the chances of finding a solution.
 
-Your mileage may vary on these types of forums; this question was asked over 13 years ago, and it still hasn't received a solution. It's not even clear what's being asked, so how can an answer be given? The bottom line is this: if you follow even half of the advice in this article, you'll make it easier for everyone. It shouldn't have to be perfect, and it's ok to ask obvious questions. One of the most significant benefits of technical forums such as Stack Overflow is that the same problems come up repeatedly, and it's extremely helpful to have the solutions to other people's experiences so readily available as a resource. Good posts facilitate added value to this resource.
+By taking the time to construct thoughtful questions and contributing to the collective knowledge on these forums, individuals can add significant value to the resources available to the community.  Whether you are an experienced expert or just starting out, the effort put into crafting high-quality questions can immensely enhance the overall usefulness of technical forums and the resources they provide.
