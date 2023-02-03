@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "The Cathedral and the Mound: Monolithic and Modular Design"
+title: "The Cathedral and the Mound"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-25
 published: true
