@@ -15,8 +15,6 @@ The termite mound is a prime example of a decentralized, bottom-up approach to o
 
 <img width="500" class="float-end pe-4" src="/img/essayPics/termiteCathedrals.jpg" alt="Decentralized or centralized management">
 
-The termite mound is an inspiring example of a decentralized, bottom-up design.  Each termite contributes to the construction of a complex and intricate structure through independent yet collective efforts.  When combined, the contributions of many termites result in something far greater than any single termite could achieve alone.  This approach is similar to modular design in systems engineering, where multiple smaller components come together to form a cohesive and functional system.
-
 On the other hand, the Sagrada Familia cathedral showcases a centralized, top-down design process.  The cathedral was planned and constructed under the guidance of a central authority, with a highly controlled and centralized approach.  This approach mirrors monolithic design in systems engineering, where one large and all-encompassing system is designed and built from the top down.
 
 Comparing these two examples highlights monolithic and modular design's unique strengths and weaknesses.  The monolithic approach is efficient and straightforward but can also be rigid and inflexible.  Using a modular design is more dynamic and versatile, but it can also be more complex and challenging to control.  The best solution depends on the specific application and desired outcomes.  In this essay, we will delve into the advantages and disadvantages of both design approaches, compare and contrast them, and guide you in choosing the best one for your needs.
