@@ -6,8 +6,7 @@ title: "Asking for Help"
 date: 2023-01-26
 published: true
 labels:
-  - Smart Questions
-  - Dumb Questions
+  - Asking Smart Questions
 ---
 
 Isaac Newton's famous quote, "If I have seen a little further, it is by standing on the shoulders of Giants," highlights the significance of building upon the knowledge of those who have come before us, as their collective contributions have propelled humanity to new heights, shaping the world we know today.  However, with the sheer amount of information available, navigating and accessing the technical knowledge we need has become a daunting task.
