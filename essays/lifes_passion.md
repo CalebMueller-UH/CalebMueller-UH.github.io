@@ -1,13 +1,12 @@
 ---
 layout: essay
 type: essay
-title: "Life's Passion: Often Hidden In Plain Sight"
+title: "Life's Passion Hidden In Plain Sight"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-17
 published: true
 labels:
-  - Software Engineering
-  - Learning
+  - Finding Your Why
 ---
 
 <img width="350px" class="rounded float-start pe-4" src="../img/essayPics/lissajous.jpeg">
