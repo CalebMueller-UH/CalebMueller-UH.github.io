@@ -9,7 +9,7 @@ labels:
   - Asking Smart Questions
 ---
 
-Isaac Newton's famous quote, "If I have seen a little further, it is by standing on the shoulders of Giants," highlights the significance of building upon the knowledge of those who have come before us, as their collective contributions have propelled humanity to new heights, shaping the world we know today.  However, with the sheer amount of information available, navigating and accessing the technical knowledge we need has become a daunting task.
+Human progress can be credited to the cumulative efforts and discoveries of those who have come before us. As Isaac Newton famously stated, "If I have seen a little further, it is by standing on the shoulders of Giants." However, with the vast amount of information generated through so much advancement, it can often be challenging to navigate and find the pertinent information needed to accomplish a given task.
 
 <img width="500" class="float-end pe-4" src="/img/essayPics/ironGiant.jpg" alt="Standing on the shoulders of giants">
 
