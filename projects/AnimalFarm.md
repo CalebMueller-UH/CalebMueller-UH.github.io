@@ -4,7 +4,7 @@ type: project
 image: img/projectPics/animal_farm_full.jpg
 title: "Animal Farm"
 date: 2022
-published: true
+published: false
 labels:
 - Object-oriented Programming
 - C++

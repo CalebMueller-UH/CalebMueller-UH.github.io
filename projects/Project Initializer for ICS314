@@ -12,7 +12,6 @@ summary: "Automated project setup tool for creating a local project Git reposito
 ---
 This script is a tool that streamlines the process of starting a new projectfor ICS314. The script automates the creation of a local Git repository and sets up a remote repository on GitHub, as well as adding template files, setting up npm tools, and creating an initial commit. This saves time and effort compared to manually performing these steps every time a new project is started.
 
-
 ## Functionality
 The script performs several key functions:
 - Checks if the user is logged into GitHub and installs the gh command if necessary
