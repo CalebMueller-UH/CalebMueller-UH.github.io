@@ -27,7 +27,9 @@ The script performs several key functions:
 ## Usage
 To use the script, run the following command in your terminal:
 bash:
-```./init_idea_proj.sh <destination_directory> [repo_link_or_description]```
+```
+./init_idea_proj.sh <destination_directory> [repo_link_or_description]
+```
 
 The destination_directory argument is the name of the local project repository that will be created.
 The optional repo_link_or_description argument can either be a remote repository link ending in ".git" or a project description. If a repository link is provided, the script will connect the local repository to the remote repository. If a description is provided, the script will create a new remote repository on GitHub with the given description.
