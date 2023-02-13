@@ -10,7 +10,7 @@ labels:
   - IntelliJ IDEA
 summary: "Automated project setup tool for creating a local project Git repository containing template files and connecting it to remote repository on GitHub."
 ---
-This script is a tool that streamlines the process of starting a new project in the ICS314 class. The script automates the creation of a local Git repository and sets up a remote repository on GitHub, as well as adding template files, setting up npm tools, and creating an initial commit. This saves time and effort compared to manually performing these steps every time a new project is started.
+This script is a tool that streamlines the process of starting a new projectfor ICS314. The script automates the creation of a local Git repository and sets up a remote repository on GitHub, as well as adding template files, setting up npm tools, and creating an initial commit. This saves time and effort compared to manually performing these steps every time a new project is started.
 
 
 ## Functionality
