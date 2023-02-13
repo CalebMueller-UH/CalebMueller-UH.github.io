@@ -35,7 +35,9 @@ The destination_directory argument is the name of the local project repository t
 The optional repo_link_or_description argument can either be a remote repository link ending in ".git" or a project description. If a repository link is provided, the script will connect the local repository to the remote repository. If a description is provided, the script will create a new remote repository on GitHub with the given description.
 
 ## Limitations and Assumptions
-The script assumes that the gh command is installed and that the user is logged into GitHub.- The script will overwrite any existing directory with the same name as the destination_directory.- The script assumes that the project_initializer.config file and template_files directory are located in the proj_init_dir directory.
+- The script assumes that the gh command is installed and that the user is logged into GitHub.
+- The script will overwrite any existing directory with the same name as the destination_directory.
+- The script assumes that the project_initializer.config file and template_files directory are located in the proj_init_dir directory.
 
 ## Conclusion
 The Project Initializer script is a helpful tool for streamlining the process of starting a new project in the ICS314 class. By automating several key steps, the script saves time and effort compared to manually performing these steps every time a new project is started. In addition, this project showcases my ability to write complex bash scripts and demonstrates my understanding of Git and npm tools.
