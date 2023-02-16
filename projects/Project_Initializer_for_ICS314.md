@@ -10,18 +10,6 @@ labels:
   - IntelliJ IDEA
 summary: "Automated project setup tool for creating a local project Git repository containing template files and connecting it to a remote repository on GitHub."
 ---
----
-layout: project
-type: project
-image: img/projectPics/Project_Initializer.png
-title: "Project Initializer for ICS314"
-date: 2023
-published: true
-labels:
-  - Bash Scripting
-  - IntelliJ IDEA
-summary: "Automated project setup tool for creating a local project Git repository containing template files and connecting it to a remote repository on GitHub."
----
 This script is a helpful tool that streamlines the process of starting a new project for ICS314 by automating the creation of a local Git repository. It then sets up a remote repository on GitHub, adds template files to it, sets up npm tools, creates an initial commit, and prompts the user to optionally add a predefined collaborator access for grading the project. This saves time and effort compared to manually performing these steps every time a new project is started.
 
 ## Functionality
