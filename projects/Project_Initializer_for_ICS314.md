@@ -27,14 +27,15 @@ The script performs several key functions:
             * User must confirm their desire to delete the remote repo by typing their username + '/' + repo name
         - If the user doesn't want to overwrite, they are prompted to enter a new name for the local and remote repo
 - Adds template files to the local repository
-- Sets up npm tools- Creates an initial commit in the local repository
+- Sets up npm tools
+- Creates an initial commit in the local repository
 - If a remote repository URL is provided as the second command line argument when the script is invoked, the local repo will then be connected to the provided remote repo URL via git remote add origin $REPO_ADDRESS
 
 ## Requirements
 Before using this script, ensure that the following software is installed:
 - git
 - npm
-- gh command-line tool (Install via pip: pip install gh)
+- gh command-line tool
 
 ## Project Directory Structure
 To use this script, the following directory structure is expected:
@@ -42,9 +43,7 @@ To use this script, the following directory structure is expected:
 - The proj_init_dir directory (which contains the project_initializer.config file and the template_files directory) should also reside in the root project directory.
 
 ## Usage
-To use this script, ensure that it resides in the root project directory where you keep your projects.
-Run the following command in your terminal:
-
+To use this script run the following command in your terminal:
 ```
 ./init_idea_proj.sh <destination_directory> [repo_link_or_description] [description]
 ```
