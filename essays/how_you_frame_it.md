@@ -10,7 +10,7 @@ labels:
 ---
 A user interface (UI) framework is a set of libraries, components, and interfaces that make application development easier (or are supposed to). While much of what can be done with a UI framework can be accomplished with raw HTML and CSS, both frameworks and native HTML have their advantages. Rather than peddle some sensationalist viewpoint of one extreme or the other, I believe that the more tools one has to work with, the better. A good engineer knows which tool to use and for what.
 
-<img src="/essayPics/empire_state_framing.jpg" alt="Empire State Building Framing" class="float-start pe-4" width="350px">
+<img width="350px" class="float-start pe-4" src="../img/essayPics/empire_state_framing.jpg" alt="Empire State Building Framing"  >
 
 Recently I’ve gotten some hands-on experience messing around with Bootstrap, and some things are neat. I like how modular the elements are and how given enough time, even a novice like me can build great-looking websites. The buttons, menus, icons, and containers make formatting easier than using only raw CSS or HTML. Still there have been times where I found myself reaching for the more straightforward approach. Not because some framework-y solution doesn’t exist, but because my noob skills lack the esoteric knowledge of what combination of bootstrap class recipes accomplish what I want. Formatting multiple columns across a row? Too easy! Making the background of an image translucent and centered on a page? Better give me a couple of hours.
 
