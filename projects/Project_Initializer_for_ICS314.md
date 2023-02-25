@@ -81,4 +81,4 @@ This will create a local project repository named my_project and a new remote re
 This will create a local project repository named my_project, connect it to the remote repository at https://github.com/user/my_project.git, and add the description "My project description" to the remote repository.
 
 
-[Link to Github Project Page](https://github.com/CalebMueller-UH/IDEA_Project_Initializer)
+[Link to Github Project Page]([https://github.com/CalebMueller-UH/IDEA_Project_Initializer](https://github.com/CalebMueller-UH/ICS314_projectInit.git))
