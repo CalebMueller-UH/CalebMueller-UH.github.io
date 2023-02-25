@@ -1,0 +1,125 @@
+/* Grey and Slate Theme: modifies the default theme to feature a sleek grey and slate color scheme. */
+
+/* Use Open Sans as the default font. */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700");
+
+/* See https://getbootstrap.com/docs/5.2/customize/css-variables/#root-variables for variables to override. */
+:root {
+    --tf-debugRed: #ff0000;
+    --tf-offWhite1: #ebebeb;
+    --tf-grey1: #7face0;
+    --tf-grey2: #64685b;
+    --tf-grey3: #44444e;
+    --tf-slate1: #3b5889;
+    --tf-linkBlue: #003cff;
+    --tf-bgBlack1: #1d1d1d;
+    --tf-bgBlack2: #464550;
+    --bs-font-sans-serif: "Open Sans", sans-serif;
+    --bs-font-sans-serif-color: var(--tf-offWhite1);
+    --bs-link-color: var(--tf-linkBlue);
+    --tf-pill-bg: var(--tf-grey2);
+    --tf-icon-fill: var(--tf-offWhite1);
+    --tf-page-bg-color: var(--tf-bgBlack1);
+    --tf-footer-bg-color: var(--tf-grey2);
+    --tf-projects-bg-color: var(--tf-bgBlack1);
+    --tf-essays-bg-color: var(--tf-bgBlack1);
+}
+
+/* Main Page Heading Stylization */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Rubik;
+    color: var(--tf-offWhite1);
+}
+
+/* Main Page Text Stylization */
+body {
+    font-family: var(--bs-font-sans-serif);
+    color: var(--bs-font-sans-serif-color);
+    font-weight: 700
+}
+
+/* Format social media icons */
+.tf-social {
+    display: inline-block;
+    fill: var(--tf-offWhite1);
+    height: 1.5em;
+    vertical-align: -.1em;
+    width: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Add class to format the text inside the cards */
+.card {
+    background-color: var(--tf-grey3);
+}
+
+/* Add class to format the title text of the cards */
+.card-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--tf-offWhite1);
+    font-weight: 600
+}
+
+/* Add class to control date appearance within cards */
+.card-date {
+    color: var(--tf-offWhite1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400
+}
+
+/* Add class to format the text inside the cards */
+.card-text {
+    font-family: var(--bs-font-sans-serif);
+    color: var(--tf-offWhite1);
+    font-weight: 400
+}
+
+/* Simplify the styling of the bottom of Essay cards. */
+.card-footer {
+    background-color: var(--tf-grey2);
+    border-top: none;
+}
+
+/* Add class to format the buttons */
+.btn {
+    background-color: var(--tf-slate1);
+    color: var(--tf-offWhite1);
+}
+
+/* Add class to format the buttons on hover */
+.btn:hover {
+    background-color: var(--tf-grey1);
+    color: var(--tf-bgBlack1);
+}
+
+.essay-page {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+    color: var(--tf-offWhite1);
+    font-weight: 400;
+}
+
+.essay-page .highlight {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+}
+
+.project-page {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+    color: var(--tf-offWhite1);
+    font-weight: 400
+}
+
+.project-page .highlight {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+}
+
+.bg-gradient {
+    background: radial-gradient(ellipse farthest-corner, var(--tf-bgBlack2), var(--tf-bgBlack1));
+}

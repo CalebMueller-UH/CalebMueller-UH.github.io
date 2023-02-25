@@ -1,0 +1,111 @@
+{
+  "basics": {
+    "name": "Caleb Mueller",
+    "label": "CE Student",
+    "picture": "https://github.com/CalebMueller-UH.png",
+    "email": "mc61@hawaii.edu",
+    "phone": "808-367-9024",
+    "website": "https://CalebMueller-UH.github.io",
+    "summary": "As a senior computer engineering student at the University of Hawaii at Manoa, set to graduate in December 2023, I am passionate about using technology to help solve some of the world's most pressing issues through designing and engineering solutions for embedded systems and IoT devices.",
+    "location": {
+      "address": "",
+      "postalCode": "96822",
+      "city": "Honolulu",
+      "countryCode": "USA",
+      "state": "Hawaii"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "CalebMueller-UH",
+        "url": "http://github.com/CalebMueller-UH"
+      }
+    ]
+  },
+  "interests": [
+    {
+      "name": "Software Engineering"
+    },
+    {
+      "name": "Internet of Things"
+    },
+    {
+      "name": "3d-modeling"
+    },
+    {
+      "name": "PCB Layout"
+    },
+    {
+      "name": "Robotics"
+    },
+    {
+      "name": "Computer Security"
+    },
+    {
+      "name": "Scuba Diving"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [
+        "ARM Assembly",
+        "C",
+        "C++",
+        "Javascript",
+        "Python",
+        "SystemVerilog",
+        "Bash Scripting",
+        "Espressif IDF",
+        "Arduino",
+        "STM32Cube",
+        "Version Control(git)"
+      ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [
+        "Windows",
+        "Ubuntu",
+        "FreeRTOS"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Engineering (expected Fall, 2023)",
+      "studyType": "B.S.",
+      "startDate": "2019-09-01",
+      "endDate": "Present",
+      "courses": []
+    },
+    {
+      "institution": "Windward Community College, Kaneohe, HI",
+      "area": "Natural Sciences: Biology",
+      "studyType": "A.S.",
+      "startDate": "2016-09-01",
+      "endDate": "2018-12-15",
+      "Certificates of Achievement": [
+        "Ethnopharmacology",
+        "Bio-Phytotechnology"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Makai Ocean Engineering",
+      "position": "Intern",
+      "website": "https://www.makai.com/",
+      "startDate": "2022-10-01",
+      "endDate": "Present",
+      "summary": "Assembly, and software engineering for autonomous submersable vehicles.",
+      "highlights": []
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}

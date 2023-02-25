@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="POV Poi | Caleb Mueller | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/CalebMueller-UH.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Caleb Mueller | Professional Portfolio">
+    <meta property="og:url" content="https://CalebMueller-UH.github.io/projects/PersistenceOfVisionLEDPoi%20copy.html">
+    <meta property="og:title" content="POV Poi | Caleb Mueller | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/CalebMueller-UH.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/greyAndSlate.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>POV Poi | Caleb Mueller | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Caleb Mueller</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container py-4">
+
+  <body class="project-page">
+    <h1 class="display-4">POV Poi</h1>
+    <p><img width="750px" class="rounded float-start pe-4" src="/img/projectPics/lightSticks.jpg" /></p>
+
+<h2 id="overview">Overview</h2>
+<p>This project marked my first dive into developing an IoT device and ultimately inspired me to pursue a Computer Engineering degree at the University of Hawaii at Manoa.  In 2017, I came across a similar project that used addressable LEDs to display pixel art images and wave patterns, utilizing the persistence of vision (PoV) effect.  PoV is the phenomenon where an image continues to be perceived for a brief moment after the source of the image has been removed, allowing the brain to process a series of rapidly changing images as a single, continuous motion.</p>
+
+<h4 id="addressable-leds">Addressable LEDs</h4>
+<p>I utilized APA102/SK9822 addressable RGB LEDs for this project.  These small surface-mount LEDs use a +5V V_in and a Serial Clk and Serial Data Line.  The wiring connects a string of LEDs serially, with Clk_out-&gt;Clk_in and Data_out-&gt;Data_in.  A microcontroller sends information for the entire string to the first LED in the series via serial communication, and the first LED’s controller assigns an RGB value to its LED and passes the remaining input serial stream to the next LED in the string.  This allows any LED in a string to be assigned a 3-Byte RGB value with a rapid refresh rate.  See <a href="https://cpldcpu.wordpress.com/2014/11/30/understanding-the-apa102-superled/">here</a> for a good description of the serial data scheme.</p>
+
+<h4 id="microcontrollersoc">Microcontroller/SOC</h4>
+<p>The controller for this project is a tinyPico development board that utilizes an ESP32-Pico-D4.  I designed a simple carrier board that connects the development module footprints to their various voltage sources and GPIO pins to minimize wired connections and make the final result cleaner.  The carrier board also served as a simple prototype to test the circuit before integrating all components into a single board layout.</p>
+
+<h4 id="carrier-board-details">Carrier Board Details</h4>
+<p>Other hardware features/peripherals on the carrier board include:</p>
+<ul>
+  <li>A charge controller for regulating the +5V micro-USB V_in to an appropriate charge voltage and current to manage a 300mAH LiPo Battery</li>
+  <li>A 3v3 voltage regulator to supply power to the esp32, MPU, and RGB strip</li>
+  <li>An MPU-6050 Accelerometer/Gyrometer to sense angular position and acceleration to modulate effects</li>
+  <li>MOSFETs used as digitally actuated switches to control supply currents to the LED Strip and MPU peripheral, and a push-button that controls the state and options of the controller.</li>
+</ul>
+
+<h4 id="current-functionality">Current Functionality</h4>
+<p>Currently, this project displays Bitmap images mounted to the local ROM.  During the startup sequence, the controller builds an array of vectors containing the RGB information for each image in memory into heap memory.  The microcontroller is programmed as a simple state machine that can switch between image patterns and programs through the push-button interface.  A click-type sensing algorithm is implemented into the button control code, which can differentiate between single clicks, double clicks, and long presses.  This feature allows different modes, such as brightness adjustment and pattern-auto-play to be set with the single-button interface.</p>
+
+<h4 id="plans-for-the-future">Plans for the Future</h4>
+<p>In the future, I plan to:</p>
+<ul>
+  <li>Switch from using the SPIFFS file system over to tinyFS</li>
+  <li>Transition away from the FastLED library to a lighter-weight custom LED driver</li>
+  <li>Incorporate IoT features such as device synchronization and server connectivity to facilitate the transfer of images and settings files</li>
+  <li>Develop a mobile app or web-based GUI to control the device wirelessly.</li>
+</ul>
+
+<p><a href="https://github.com/CalebMueller-UH/pov-poi">Link to Github Project Page</a></p>
+
+  </body>
+</div>
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

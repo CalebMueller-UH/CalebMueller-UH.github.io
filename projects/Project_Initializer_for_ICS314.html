@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Project Initializer for ICS314 | Caleb Mueller | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/CalebMueller-UH.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Caleb Mueller | Professional Portfolio">
+    <meta property="og:url" content="https://CalebMueller-UH.github.io/projects/Project_Initializer_for_ICS314.html">
+    <meta property="og:title" content="Project Initializer for ICS314 | Caleb Mueller | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/CalebMueller-UH.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/greyAndSlate.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Project Initializer for ICS314 | Caleb Mueller | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Caleb Mueller</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container py-4">
+
+  <body class="project-page">
+    <h1 class="display-4">Project Initializer for ICS314</h1>
+    <p>This script is a helpful tool that streamlines the process of starting a new project for ICS314 by automating the creation of a local Git repository. It then sets up a remote repository on GitHub, adds template files to it, sets up npm tools, creates an initial commit, and prompts the user to optionally add a predefined collaborator access for grading the project. This saves time and effort compared to manually performing these steps every time a new project is started.</p>
+
+<h2 id="functionality">Functionality</h2>
+<p>The script performs several key functions:</p>
+<ul>
+  <li>Verifies that the proj_init_dir path set in the script points to a valid folder containing the project_initializer.config file and template_files directory
+    <ul>
+      <li>If proj_init_dir is not valid, the user is prompted to provide a valid path to this file, and alters the script to remember this on future runs</li>
+    </ul>
+  </li>
+  <li>Checks if the user has gh installed, and promts the user to install if not, via pip.
+    <ul>
+      <li>gh is a command line interface that is able to make api calls to github.com, permitting much of the functionality of this script</li>
+    </ul>
+  </li>
+  <li>Checks if the user is authenticated and signed into github through gh, and if not, prompts the user to do so</li>
+  <li>Checks to see if the provided command line argument repo already exists
+    <ul>
+      <li>If the provided repo name doesn’t already exist a local Git repository is initialized with that name
+        <ul>
+          <li>Once a local repo is initialized the script then creates a remote private repository on github with the same name</li>
+        </ul>
+      </li>
+      <li>If the provided repo name does already exist locally the user is asked if they would like to overwrite.
+        <ul>
+          <li>If the user wants to overwrite, the local repo is reinitialized, and the remote repo with that same name is deleted
+            <ul>
+              <li>User must confirm their desire to delete the remote repo by typing their username + ‘/’ + repo name</li>
+            </ul>
+          </li>
+          <li>If the user doesn’t want to overwrite, they are prompted to enter a new name for the local and remote repo</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Adds template files to the local repository</li>
+  <li>Sets up npm tools</li>
+  <li>Creates an initial commit in the local repository</li>
+  <li>If a remote repository URL is provided as the second command line argument when the script is invoked, the local repo will then be connected to the provided remote repo URL via git remote add origin $REPO_ADDRESS</li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+<p>Before using this script, ensure that the following software is installed:</p>
+<ul>
+  <li>git</li>
+  <li>npm</li>
+  <li>gh command-line tool</li>
+</ul>
+
+<h2 id="project-directory-structure">Project Directory Structure</h2>
+<p>To use this script, the following directory structure is expected:</p>
+<ul>
+  <li>The init_idea_proj.sh script should reside in the root project directory.</li>
+  <li>The proj_init_dir directory (which contains the project_initializer.config file and the template_files directory) should also reside in the root project directory.</li>
+</ul>
+
+<h2 id="usage">Usage</h2>
+<p>To use this script run the following command in your terminal:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./init_idea_proj.sh &lt;destination_directory&gt; [repo_link_or_description] [description]
+</code></pre></div></div>
+
+<ul>
+  <li>The destination_directory argument is the name of the local project repository that will be created.</li>
+  <li>
+    <p>The optional repo_link_or_description argument can either be a remote repository link ending in “.git” or a project description in double-quotes.
+      - If a repository link is provided, the script will connect the local repository to the remote repository.
+      - If a description is provided, the script will create a new remote repository on GitHub with the given description.</p>
+  </li>
+  <li>The optional description argument is the project description to be used when creating a new remote repository. This argument is only used if the project is being initialized with a provided repository link.</li>
+</ul>
+
+<p>Examples:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./init_idea_proj.sh my_project
+</code></pre></div></div>
+<p>This will create a local project repository named my_project and a new remote repository on GitHub with the name my_project.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./init_idea_proj.sh my_project https://github.com/user/my_project.git
+</code></pre></div></div>
+<p>This will create a local project repository named my_project and connect it to the remote repository at https://github.com/user/my_project.git.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./init_idea_proj.sh my_project "My project description" 
+</code></pre></div></div>
+<p>This will create a local project repository named my_project and a new remote repository on GitHub with the name my_project and description “My project description”.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./init_idea_proj.sh my_project https://github.com/user/my_project.git "My project description" 
+</code></pre></div></div>
+<p>This will create a local project repository named my_project, connect it to the remote repository at https://github.com/user/my_project.git, and add the description “My project description” to the remote repository.</p>
+
+<p><a href="[https://github.com/CalebMueller-UH/IDEA_Project_Initializer](https://github.com/CalebMueller-UH/ICS314_projectInit.git)">Link to Github Project Page</a></p>
+
+  </body>
+</div>
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
