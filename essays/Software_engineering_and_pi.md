@@ -29,7 +29,4 @@ Agile is one of many commonly used approaches to managing a project, and is bett
 
 ## Infinitesimal through to the infinite and back again
 <img width="275" class="float-end pe-4" src="/img/essayPics/cosmic_infinity.png" alt="Infinity">
-Computer technology has become so central to all of our lives that the engineers involved in its creation are increasingly responsible for the well being of everyone who comes into contact with their work.  As we progress in our journey as software engineers, it is crucial to remember that our work has far-reaching implications for all who interact with the technology we create. The adage 'With great power comes great responsibility' is not simply a cliche, but a guiding principle for us as professionals. Our educators emphasize this point to instill in us a sense of duty and responsibility as we embark on our careers. As creators of the future, we must contemplate the collective impact of our work on society and strive to make decisions that benefit the greater good. By acknowledging our interconnectedness and embracing the notion that we're all in this together, we can foster a mindset that transcends individual goals and ultimately drive meaningful change in the world through our work as software engineers.
-
-
-
+As I progress in my journey as a software engineer, I think it's crucial to remember the far-reaching implications ones work can have for all who interact with products we create. The adage 'With great power comes great responsibility' is not simply a cliche, but a rallying call for professionalism. Those who have had a role in my education have made a concerted effort to instill a sense of duty and responsibility as an engineer beginning his career.
