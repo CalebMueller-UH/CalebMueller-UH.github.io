@@ -9,7 +9,7 @@ labels:
 - ICS314 Final Project
 - Javascript
 - Meteor react bootstrap app
-summary: "Jamb-uh-ree is a web app built to help connect artists on UH campus to connect with one another"
+summary: "Jamb-uh-ree is an mvp web app project that's meant to help connect musical artists within the UH Manoa campus together"
 ---
 ## Jamb-UH-ree: Facilitating Musical Collaborations among UH Manoa Students
 Jamb-UH-ree is a collaborative web application created to help connect musically-inclined students at the University of Hawaii at Manoa. The platform serves as a central hub, enabling students to discover and engage with fellow musicians, plan jam sessions, and foster creative collaborations based on shared interests, skill levels, influences, and instruments.
