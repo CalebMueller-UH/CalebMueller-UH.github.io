@@ -30,3 +30,6 @@ Jamb-UH-ree represents the culmination of a dedicated team's effort. By leveragi
 For those interested in Jamb-UH-ree, the associated project page provides references to the application's source code, and link to the deployed site on the web.
 
 [Project Page](https://jamb-uh-ree.github.io/)
+
+And here is a direct link to the deployed app on the web:
+[Deployed App](https://jamb-uh-ree.site/)
