@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Network Simulator | Caleb Mueller | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/CalebMueller-UH.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Caleb Mueller | Professional Portfolio">
+    <meta property="og:url" content="https://CalebMueller-UH.github.io/projects/NetworkSimulator.html">
+    <meta property="og:title" content="Network Simulator | Caleb Mueller | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/CalebMueller-UH.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/greyAndSlate.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Network Simulator | Caleb Mueller | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Caleb Mueller</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container py-4">
+
+  <body class="project-page">
+    <h1 class="display-4">Network Simulator</h1>
+    <p>Network Simulator Project Overview</p>
+
+<p>Introducing the Network Simulator Project, a vital component of UH Manoa’s EE367-L Data Structures and Algorithms course. This sophisticated network simulator initializes from configuration files that define diverse network topologies. Users can explore and interact with individual hosts in a simulated network using the manager interface, which communicates via pipes or sockets.
+Key Features</p>
+
+<p>The manager interface is able to interact with a single host at a time.  When the manager selects an active hose, the user is able to issue that node a menu of single letter commands that cause the manager, and by extension the host to perform certain tasks.<br />
+Those commands are:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'s': View the current host's state
+'m': Define the active host's file directory
+'h': Display all hosts within the network
+'c': Switch the active host being managed
+'p': Initiate a ping from the active host to another
+'u': Upload a file from the active host's directory to another host's directory
+'d': Download a file to the active host's directory from another host's directory
+'a': Register a domain name alias with a DNS server node
+'q': Exit the program
+</code></pre></div></div>
+
+<p>Additionally, the project implements two other network node types that don’t directly interact with the manager:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Switches: Manage packet forwarding and broadcasting between connected network nodes, maintains a routing table for host IDs and port number, and implements something similar to the spanning tree protocol to optimize data paths within a topology.
+DNS Server: Stores and retrieves domain names registered by hosts with the DNS server.
+</code></pre></div></div>
+
+<p>The project’s links can be implemented in two ways:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pipes: Facilitate inter-process communication between nodes on the same machine
+Sockets: Enable communication between nodes on different machines
+</code></pre></div></div>
+
+<p>Installation and Usage</p>
+
+<p>Follow these steps to install and utilize the Network Simulator Project:
+Building the Project</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Clone the repository to your local machine.
+Navigate to the project's root directory.
+Open the Makefile in a text editor to review available options and settings.
+Execute the make command to build the project. This compiles the C source files using the compiler and flags defined in the Makefile, generating the output executable files.
+</code></pre></div></div>
+
+<p>Makefile Commands</p>
+
+<p>The included Makefile streamlines the compilation and execution process with various commands, such as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make: Compiles the entire project into two executable binaries (net367 with debug messages disabled and net367debug with debug messages enabled)
+make clean: Removes executables and object files from previous compilations
+make regen: Deletes previous binaries and executables, compiles both net367 and net367debug binaries, and resets the TestDir* files to their initial content
+make regen_d: Functions like regen, but only compiles the net367_debug binary
+make run: Executes the net367 binary with the default config file set by the option DEFAULT_CONFIG
+make debug: Functions like run, but with the net367debug binary
+</code></pre></div></div>
+
+<p>Running the Project</p>
+
+<p>After building the project, execute it with the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>For the non-debug executable: ./net367 &lt;config file&gt;
+For the debug-enabled executable: ./net367debug &lt;config file&gt;
+</code></pre></div></div>
+
+<p>This launches the network simulator, allowing interaction via the manager interface.</p>
+
+<p>*Note: Configuration files for various network topologies reside in the root directory. Modify the $(DEFAULT_CONFIG) in the Makefile to use a different file with ‘make run’ or ‘make debug’, or specify another configuration file when executing the binaries directly.</p>
+
+<p>License
+This project is licensed under the MIT License.</p>
+
+<p><a href="https://github.com/CalebMueller-UH/lab5">Project Page on Github</a></p>
+
+  </body>
+</div>
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

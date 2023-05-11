@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Recipes for Success: Coding with Design Patterns | Caleb Mueller | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/CalebMueller-UH.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Caleb Mueller | Professional Portfolio">
+    <meta property="og:url" content="https://CalebMueller-UH.github.io/essays/recipe_for_success.html">
+    <meta property="og:title" content="Recipes for Success: Coding with Design Patterns | Caleb Mueller | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/CalebMueller-UH.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/greyAndSlate.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Recipes for Success: Coding with Design Patterns | Caleb Mueller | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Caleb Mueller</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container py-4">
+
+  <body class="essay-page">
+    <h1 class="display-4">Recipes for Success: Coding with Design Patterns</h1>
+    <span class="date">27 Apr 2023</span>
+    <hr>
+    <h2 id="following-a-recipe">Following a Recipe</h2>
+<p>Picture a master chef preparing a delectable dish.  They start with a recipe as a guide, but along the way make adjustments based on their taste, experience, and intuition, ultimately creating something unique, delicious, and masterful.  In the world of software development, design patterns serve a similar purpose.  Like a tried-and-true recipe, design patterns provide a proven framework for building software applications, allowing developers to customize and adapt them to suit individual needs and preferences.  In addition, using design patterns leads to improved code quality, maintainability, and scalability—essential ingredients for success in software development.</p>
+
+<h2 id="the-cookbook-of-four">The Cookbook of Four</h2>
+<p>Design patterns are reusable solutions to common programming problems that have emerged over time.  They have their roots in architecture, being formally introduced to the software development community in the 1990s by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, collectively known as the “Gang of Four” in their book “Design Patterns: Elements of Reusable Object-Oriented Software.”  In their seminal work, they documented 23 patterns that play a vital role in the toolbox of a professional software developer to this day, offering guidelines for improving code organization, clarity, and efficiency.  Some of these include the Singleton, Factory, and Observer patterns, each serving a distinct purpose to address specific programming challenges.</p>
+
+<h2 id="popular-dishes-and-common-patterns">Popular Dishes and Common Patterns</h2>
+<p>As was alluded to previously, there are many design patterns.  The Elements book by The Four was the first of many such books to have emerged, but let’s contrast only a couple:</p>
+<h3 id="the-observer">The Observer</h3>
+<p>The Observer pattern, for instance, is where a single object (the subject) maintains a list of its dependents (observers).  This pattern is helpful in cases where multiple objects need to be informed of changes in another object’s state.  For example, a multi-process application managing several end-points might use the Observer pattern to notify all end-points that a particular global state variable has changed.  This one-to-many relationship is well suited for the loose coupling between the subject and its observers, making modifying or extending the system easier.  The drawback to this is that sharing an observer’s state change can trigger a cascade of updates in the dependent subjects.</p>
+<h3 id="the-command">The Command</h3>
+<p>On the other hand, the Command pattern encapsulates a request as an object, decoupling the request’s sender from its receiver.  This separation allows for greater flexibility in managing requests, such as executing them in a specific order or delaying their execution.  A common use case for the Command pattern is implementing menu items or toolbar buttons in a graphical user interface (GUI).  This pattern is particularly adept at managing the creation and undoing of operations, as each command object maintains its own state, and provides methods for operations concerning its use.  This type of encapsulation enables the composition of complex commands from simpler ones, which is great for code reuse and modularity, but does come at the cost of a more complex code base, where each request type has an attache of classes, state variables, and methods that accompany it.</p>
+
+<h2 id="beyond-the-kitchen">Beyond the Kitchen</h2>
+<p>Design patterns crop up in your code, whether you immediately recognize them or not.  I’ve listed the Observer and Command as examples because I’ve recently used these without knowing about them.  In a network simulation program that I recently worked on, I used both of them.  The Command pattern was used to manage the various states and components associated with the asynchronous scheduling of jobs that did work with network packets.  The Observer pattern proved helpful in relaying information to the different independent processes running the simulated network nodes to manage the state of a binary semaphore, which controlled access to printing to the system terminal.  Reading about them now and associating them with my code in retrospect makes me think that the solutions I arrived at aren’t all that unique and do crop up often enough to merit writing a book about.</p>
+
+<p>As I gain more experience as a software developer, more of these patterns will emerge, and having a set of recipes in my toolbox will make me all the more effective.  I see the utility and sense in studying design patterns to adapt toward an optimal solution to common problems.</p>
+
+
+  </body>
+</div>
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

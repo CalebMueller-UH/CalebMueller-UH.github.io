@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Life's Passion Hidden In Plain Sight | Caleb Mueller | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/CalebMueller-UH.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Caleb Mueller | Professional Portfolio">
+    <meta property="og:url" content="https://CalebMueller-UH.github.io/essays/lifes_passion.html">
+    <meta property="og:title" content="Life's Passion Hidden In Plain Sight | Caleb Mueller | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/CalebMueller-UH.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/greyAndSlate.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Life's Passion Hidden In Plain Sight | Caleb Mueller | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Caleb Mueller</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container py-4">
+
+  <body class="essay-page">
+    <h1 class="display-4">Life's Passion Hidden In Plain Sight</h1>
+    <span class="date">17 Jan 2023</span>
+    <hr>
+    <p><img width="350px" class="rounded float-start pe-4" src="../img/essayPics/lissajous.jpeg" /></p>
+
+<p>My interest in software engineering stems from a love of creating and building things.  After leaving the Army in 2016, I searched for a career I would be satisfied doing for the rest of my life.  I had always been fascinated by technology but felt that I lacked the skills and knowledge to pursue such a technical career.  It was not until my second year of a biology degree that I purchased an Arduino kit as a hobby interest and discovered my passion for electronics and coding.  I quickly became engrossed in how the code I wrote could control the behavior of servos, motors, and sensors.  Within a month of buying that kit, I had already worked through the little book of beginner projects and was looking to build something from scratch.</p>
+
+<p>That first project was a laser spirograph.  I had seen YouTube videos about how mounting small mirrors to the spindles of DC motors and bouncing a laser beam consecutively off multiple spinning mirrors could create these incredible Lissajous figures.  What set my imagination on fire was that the spinning of the mirrors, messily hot-glued and unbalanced to the shafts of those motors, oscillated and produced an audible vibration.</p>
+
+<p>Growing up, I played the cello in the school orchestra and had a basic grasp of musical theory.  By playing with this laser toy I had built, I observed that by adjusting the various motors spinning at different speeds in such a way that they formed harmonic musical chords, the resultant projected laser patterns formed stable standing-wave figures that resembled flowers, stars, and more!  Let me re-emphasize how neat this is: the standing wave patterns correspond to the phenomenon of what humans perceive as harmony!  Truly incredible.</p>
+
+<p>Around this time, I was taking a pre-calculus class and had just learned how to parametrically describe the motion of a circle using sine and cosine functions.  Through building that laser spirograph, something within my brain clicked, and I had this tremendous sense of enjoyment spread through me as I was able to relate the abstract mathematical concepts of harmonic motion, first described by the likes of Euler, Fourier, and Hooke, to something I had built.  I had discovered for the first time just how beautiful the universe’s mathematics could be.</p>
+
+<p>That experience made a few things apparent to me.  First, I could be happy doing this for the rest of my life.  Second, I had been ignorant up until that point about how amazing that “Aha!” feeling could be– when something that seems on the periphery of relevance ends up being central to everything.  Third, I felt almost cheated for having lived 28 years before having the experience.  As a side note: math teachers, we should be teaching kids the cool stuff from the start!</p>
+
+<p>In the future, I plan to develop my skills in programming further and design more sophisticated embedded systems and IoT projects.  I also hope to gain experience in developing software for different platforms, such as mobile and web applications and explore how these platforms intersect with the exciting advances in technologies such as artificial intelligence and machine learning.</p>
+
+<p>Overall, my passion for creating and building things, combined with that first, and several more experiences since, have led me to pursue a career in computer and software engineering.  I look forward to continuing to develop my skills and knowledge in the field and hope to positively impact the world through what I create.</p>
+
+<h4 id="bonus">Bonus:</h4>
+<p>If you made it this far, you might be interested in this desmos graph I created around the same time the events discussed in this essay took place.</p>
+
+<p><a href="https://www.desmos.com/calculator/gncahk4kea">Desmos 4-term Spirograph</a></p>
+
+<h4 id="another-bonus">Another Bonus:</h4>
+<p>Here’s a simplified applet version of the desmos graph above:</p>
+
+<p>/*
+Written by Caleb Mueller
+22 January, 2023
+*/</p>
+
+<html>
+
+<head>
+    <title>Parametric Graph</title>
+    <style>
+        /*  Start of Default Layout for Screens Larger than 600px */
+        #container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #graph {
+            width: 40vw;
+            height: 40vw;
+            max-width: 550px;
+            max-height: 550px;
+            margin: 0;
+            background-color: #1d1d1d;
+            border: 2px solid #9c4d00;
+        }
+
+        #equation-controls {
+            margin-right: 2vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #equation {
+            font-family: Rubik;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+        }
+
+        #controls {
+            font-family: Rubik;
+            font-size: 16px;
+            color: white;
+            align-items: center;
+        }
+
+        #controls label {
+            margin-right: 8px;
+            text-align: center;
+            font-family: Rubik;
+            font-size: 20px;
+        }
+
+        #controls input[type=range] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 90%;
+            height: 15px;
+            border-radius: 7.5px;
+            background: #315c34;
+            align-items: center;
+        }
+
+        #controls input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #9c4d00;
+            cursor: pointer;
+        }
+
+        /*  End of Default Layout for Screens Larger than 600px */
+
+
+        /* Start of Layout for Portrait Orientation on Screens Smaller than 600px */
+        @media screen and (max-width: 600px) and (orientation: portrait) {
+            #container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            #graph {
+                width: 88vw;
+                height: 88vw;
+            }
+
+            #equation-controls {
+                width: 88vw;
+                height: 88vw;
+                margin-left: 0;
+            }
+
+            #equation {
+                font-family: Rubik;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+            }
+
+            #controls {
+                font-family: Rubik;
+                font-size: 16px;
+                color: white;
+                align-items: center;
+            }
+
+            #controls label {
+                margin-right: 8px;
+                text-align: center;
+                font-family: Rubik;
+                font-size: 20px;
+            }
+
+            #controls input[type=range] {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 90%;
+                height: 15px;
+                border-radius: 7.5px;
+                background: #315c34;
+                align-items: center;
+            }
+
+            #controls input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background: #9c4d00;
+                cursor: pointer;
+            }
+        }
+
+        /* End of Layout for Portrait Orientation on Screens Smaller than 600px */
+
+
+        /* Start of Layout for Landscape Orientation on Screens Smaller than 600px */
+        @media screen and (max-height: 600px) and (orientation: landscape) {
+            #container {
+                width: 87vw;
+                height: 88vh;
+                flex-direction: row-reverse;
+            }
+
+            #graph {
+                width: 45vw;
+                height: 45vw;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #equation-controls {
+                width: 90%;
+                height: 90%;
+                margin-left: 0;
+                justify-content: center;
+            }
+
+            #equation {
+                font-family: Rubik;
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                margin-right: 10px;
+            }
+
+            #controls {
+                align-items: center;
+            }
+
+            #controls label {
+                margin-right: 8px;
+                text-align: center;
+                color: white;
+                font-family: Rubik;
+                font-size: 20px;
+            }
+
+            #controls input[type=range] {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 90%;
+                height: 15px;
+                border-radius: 7.5px;
+                background: #315c34;
+                align-items: center;
+            }
+
+            #controls input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background: #9c4d00;
+                cursor: pointer;
+            }
+        }
+
+        /* End of Layout for Landscape Orientation on Screens Smaller than 600px */
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div id="container">
+        <canvas id="graph"></canvas>
+        <div id="equation-controls">
+            <div id="equation">
+                x(t) = cos(<span id="aVal"></span>t) +
+                cos(<span id="bVal"></span>t) +
+                cos(<span id="cVal"></span>t) +
+                cos(<span id="dVal"></span>t)<br /><br />
+                y(t) = sin(<span id="aVal"></span>t) +
+                sin(<span id="bVal"></span>t) +
+                sin(<span id="cVal"></span>t) +
+                sin(<span id="dVal"></span>t)
+                <br /><br />
+            </div>
+            <div id="controls">
+                <div><label for="a">α</label><input type="range" id="a" min="-16" max="16" value="5" step="1.0" oninput="draw()" /></div>
+                <div><label for="b">β</label><input type="range" id="b" min="-16" max="16" value="1" step="1.0" oninput="draw()" /></div>
+                <div><label for="c">γ</label><input type="range" id="c" min="-16" max="16" value="1" step="1.0" oninput="updateVal('cVal', this.value); draw()" /></div>
+                <div><label for="d">δ</label><input type="range" id="d" min="-16" max="16" value="-11" step="1.0" oninput="updateVal('dVal', this.value); draw()" /></div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <script>
+        const graph = document.getElementById("graph");
+        const ctx = graph.getContext("2d");
+        const controls = {
+            a: document.getElementById("a"),
+            b: document.getElementById("b"),
+            c: document.getElementById("c"),
+            d: document.getElementById("d"),
+        };
+        graph.width = window.innerWidth;
+        graph.height = window.innerHeight;
+
+        function updateVal(id, value) {
+            document.getElementById(id).innerHTML = value;
+        }
+
+        function draw() {
+            graph.width = window.innerWidth;
+            graph.height = window.innerHeight;
+            ctx.clearRect(0, 0, graph.width, graph.height);
+            ctx.beginPath();
+            ctx.strokeStyle = "green";
+            ctx.lineWidth = 4;
+
+            let a_draw = controls.a.value;
+            let b_draw = controls.b.value;
+            let c_draw = controls.c.value;
+            let d_draw = controls.d.value;
+
+            const aValueSpans = document.querySelectorAll("#aVal"); aValueSpans.forEach(span => { span.innerHTML = a_draw; });
+            const bValueSpans = document.querySelectorAll("#bVal"); bValueSpans.forEach(span => { span.innerHTML = b_draw; });
+            const cValueSpans = document.querySelectorAll("#cVal"); cValueSpans.forEach(span => { span.innerHTML = c_draw; });
+            const dValueSpans = document.querySelectorAll("#dVal"); dValueSpans.forEach(span => { span.innerHTML = d_draw; });
+
+            for (let t = 0; t <= 2 * Math.PI; t += 0.01) {
+                const scaleBy = 50;
+                const x =
+                    Math.cos(a_draw * t) +
+                    Math.cos(b_draw * t) +
+                    Math.cos(c_draw * t) +
+                    Math.cos(d_draw * t);
+                const y =
+                    Math.sin(a_draw * t) +
+                    Math.sin(b_draw * t) +
+                    Math.sin(c_draw * t) +
+                    Math.sin(d_draw * t);
+                if (t === 0) {
+                    ctx.moveTo(graph.width / 2 + x * scaleBy, graph.height / 2 - y * scaleBy);
+                } else {
+                    ctx.lineTo(graph.width / 2 + x * scaleBy, graph.height / 2 - y * scaleBy);
+                }
+            }
+            ctx.stroke();
+        }
+        draw();
+    </script>
+</body>
+
+</html>
+
+
+  </body>
+</div>
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
