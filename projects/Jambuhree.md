@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/projectPics/animal_farm_full.jpg
+image: /img/projectPics/jambuhree_browseartists.png
 title: "Jamb-uh-ree"
 date: 2023
 published: true
@@ -13,8 +13,6 @@ summary: "Jamb-uh-ree is a web app built to help connect artists on UH campus to
 ---
 ## Jamb-UH-ree: Facilitating Musical Collaborations among UH Manoa Students
 Jamb-UH-ree is a collaborative web application created to address the challenge of connecting musically-inclined students at the University of Hawaii at Manoa. The platform serves as a central hub, enabling students to discover and engage with fellow musicians, plan jam sessions, and foster creative collaborations based on shared interests, skill levels, influences, and instruments.
-
-<img width="450" class="float-end pe-4" src="/img/projectPics/jambuhree_browseartists.png" alt="Jambuhree">
 
 ## Key Features and Functionality:
     Intuitive User Interface: Jamb-UH-ree boasts a user-friendly interface designed to offer a seamless and enjoyable experience. Users can effortlessly navigate through the platform, placing the focus on their shared passion for music.
