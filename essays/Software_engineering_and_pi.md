@@ -28,5 +28,5 @@ When multiple people are involved in writing code for the same project the need 
 Agile is one of many commonly used approaches to managing a project, and is better suited for smaller to medium-sized teams.  It emphasizes collaboration, iterative development, and continually delivering updates in small increments. Issue-driven development is a complementary practice that promotes objective oriented development which prioritizes resolving issues or bugs.  Used alongside agile methodologies, the combination has proven to be an effective method for breaking a project down by phase and collaborating on the needed tasks as a team to get it done.
 
 ## Infinitesimal through to the infinite and back again
-<img width="275" class="float-end pe-4" src="/img/essayPics/cosmic_infinity.png" alt="Infinity">
+<img width="200" class="float-center pe-4" src="/img/essayPics/cosmic_infinity.png" alt="Infinity">
 As I progress in my journey as a software engineer, I think it's crucial to remember the far-reaching implications ones work can have for all who interact with products we create. The adage 'With great power comes great responsibility' is not simply a cliche, but a rallying call for professionalism. Those who have had a role in my education have made a concerted effort to instill a sense of duty and responsibility as an engineer beginning his career.
