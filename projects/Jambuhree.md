@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: /img/projectPics/jambuhree_browseartists.png
+image: img/projectPics/jambuhree_browseartists.png
 title: "Jamb-uh-ree"
 date: 2023
 published: true
