@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/projectPics/animal_farm_full.jpg
+image: img/projectPics/network_sim.png
 title: "Network Simulator"
 date: 2023
 published: true
@@ -11,89 +11,67 @@ labels:
 - Network Simulator
 summary: "This is a console network simulator that runs allows network nodes operating on differing processes and instances of the application to communicate using a packet structure "
 ---
-# Network Simulator Project
+Network Simulator Project Overview
 
-This project is part of the UH Manoa's EE367-L Data Structures and Algorithms course, and it is a network simulator that initializes itself from configuration files that describe different network topologies. The simulator allows users to interact with a single host at a time using an interface called the manager, which communicates to the various hosts within a simulated network using pipes or sockets.
+Introducing the Network Simulator Project, a vital component of UH Manoa's EE367-L Data Structures and Algorithms course. This sophisticated network simulator initializes from configuration files that define diverse network topologies. Users can explore and interact with individual hosts in a simulated network using the manager interface, which communicates via pipes or sockets.
+Key Features
 
-## Features
+The manager interface is able to interact with a single host at a time.  When the manager selects an active hose, the user is able to issue that node a menu of single letter commands that cause the manager, and by extension the host to perform certain tasks.  
+Those commands are:
 
-The manager interface allows the user to issue single letter commands, which include:
+    's': View the current host's state
+    'm': Define the active host's file directory
+    'h': Display all hosts within the network
+    'c': Switch the active host being managed
+    'p': Initiate a ping from the active host to another
+    'u': Upload a file from the active host's directory to another host's directory
+    'd': Download a file to the active host's directory from another host's directory
+    'a': Register a domain name alias with a DNS server node
+    'q': Exit the program
 
-- 's': displays the current host's state
-- 'm': sets the active host's file directory
-- 'h': displays all of the hosts in a network
-- 'c': changes the active host that the manager is interacting with
-- 'p': has the active host ping another host
-- 'u': has the active host upload a file from its set file directory to another host's set file directory
-- 'd': downloads a file from another host's file directory to the active host's file directory
-- 'a': registers a domain name alias with a DNS server node in the network
-- 'q': quits the program
+Additionally, the project implements two other network node types that don't directly interact with the manager:
 
-Aside from hosts, two other network node types are implemented in this project that don't directly interact with the manager:
+    Switches: Manage packet forwarding and broadcasting between connected network nodes, maintains a routing table for host IDs and port number, and implements something similar to the spanning tree protocol to optimize data paths within a topology.
+    DNS Server: Stores and retrieves domain names registered by hosts with the DNS server.
 
-- Switches: responsible for forwarding and broadcasting packets between connected network nodes. These nodes keep track of a routing table that associates the host ID's with link ports.
-- DNS Server: keeps a nametable that can store and retrieve domain names that are registered with the DNS server at the direction of the manager-controlled active host.
+The project's links can be implemented in two ways:
 
-The links of this project can be implemented in two different ways:
+    Pipes: Facilitate inter-process communication between nodes on the same machine
+    Sockets: Enable communication between nodes on different machines
 
-- Pipes: useful for inter-process communication between nodes on the same machine
-- Sockets: allow communication between nodes on different machines
+Installation and Usage
 
-## Installation and Usage
-
-To install and use the network simulator project, follow these steps:
+Follow these steps to install and utilize the Network Simulator Project:
 Building the Project
 
-- Clone the repository to your local machine.
-- Navigate to the root directory of the project.
-- Open the Makefile in a text editor and review the available options and settings.
-- Run the make command to build the project. This will compile the C source files using the compiler and flags defined in the Makefile, and create the output executable files.
+    Clone the repository to your local machine.
+    Navigate to the project's root directory.
+    Open the Makefile in a text editor to review available options and settings.
+    Execute the make command to build the project. This compiles the C source files using the compiler and flags defined in the Makefile, generating the output executable files.
 
-## Makefile Details
+Makefile Commands
 
-The included Makefile includes various commands to ease the process of compilation and execution of this project.
+The included Makefile streamlines the compilation and execution process with various commands, such as:
 
-Some of these commands are as follows:
+    make: Compiles the entire project into two executable binaries (net367 with debug messages disabled and net367debug with debug messages enabled)
+    make clean: Removes executables and object files from previous compilations
+    make regen: Deletes previous binaries and executables, compiles both net367 and net367debug binaries, and resets the TestDir* files to their initial content
+    make regen_d: Functions like regen, but only compiles the net367_debug binary
+    make run: Executes the net367 binary with the default config file set by the option DEFAULT_CONFIG
+    make debug: Functions like run, but with the net367debug binary
 
-	● make
-		▹ Will compile the entire project into two executable binaries:
-			- net367		-- Debug messages disabled
-			- net367debug	-- Debug messages enabled
+Running the Project
 
-	● make clean
-		▹ Delete the executables and object files from previous compilations
+After building the project, execute it with the following commands:
 
-	● make regen
-		▹ First deletes all previously compiled binaries and executables
-		▹ Next it compiles both the net367 and net367debug binaries
-		▹ It then resets the TestDir* files to their initial content
+    For the non-debug executable: ./net367 <config file>
+    For the debug-enabled executable: ./net367debug <config file>
 
-	● make regen_d
-		▹ Does the same as regen, but only compiles the net367_debug binary
+This launches the network simulator, allowing interaction via the manager interface.
 
-	● make run
-		▹ Executes the net367 binary with the default config file
-			set by the option DEFAULT_CONFIG = <default config file>
+*Note: Configuration files for various network topologies reside in the root directory. Modify the $(DEFAULT_CONFIG) in the Makefile to use a different file with 'make run' or 'make debug', or specify another configuration file when executing the binaries directly.
 
-	● make debug
-		▹ Does the same as run, but with the net367debug binary
-
-
-## Running the Project
-
-Once you have built the project, you can run it using the following commands:
-
-For the non-debug executable run `./net367 <config file>`
-
-For the debug enabled executable run `./net367debug <config file>`
-
-
-This will start the network simulator and allow you to interact with it using the manager interface.
-
-Note: The configuration files for different network topologies are located in the root directory. You can specify a different configuration file to use by replacing the  $(DEFAULT_CONFIG) in the makefile to run with 'make run' or 'make debug', or simply specifying another configuration file when directly executing the binaries
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+License
+This project is licensed under the MIT License.
 
 [Project Page on Github](https://github.com/CalebMueller-UH/lab5)
